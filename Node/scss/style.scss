@@ -138,9 +138,9 @@ h1 {
     "Allerta Stencil"
   );
 }
-h2 {
+.h2 {
   @include atributos(
-  rgb(255, 255, 255),
+  rgb(0, 0, 0),
   center,
   xx-large,
   Verdana
@@ -171,17 +171,6 @@ h4 {
 .display-5 {
   color: white;
   text-align: center;
-}
-
-.row {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.img-fluid {
-  width: 70%;
-  height: 70%;
 }
 
 .itemMuestra {
@@ -394,11 +383,36 @@ textarea {
   border-color: black;
   border-left: solid 10px;
 }
+.container{
+  width:70%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 .row {
   text-align: center;
   justify-content: center;
   align-items: center;
 }
+p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: large;
+}
+.muestraRemera{
+width: 60%;
+heigth:40%;
+ 
+}
+.img-fluid {
+  width: 50%;
+  height: 50%;
+}
+
 .estampasRemeras {
   @extend .seccion;
   display: block;
