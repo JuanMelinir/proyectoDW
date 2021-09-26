@@ -11,18 +11,18 @@ header {
   padding-left: 3%;
 }
 
-.slider {
+.slider { 
   display: flex;
   justify-content: center;
   align-items: center;
   top: 7%;
-  width: 100%;
+  width: 40%;
   height: 40%;
 }
 
 .carousel {
   height: 90%;
-  width: 40%;
+  width: 80%;
 }
 
 .navbar {
@@ -384,13 +384,17 @@ textarea {
   border-color: black;
   border-left: solid 10px;
 }
+
 .container{
-  width:70%;
+  flex-direction: column;
+  display: flex;
+  width:50%;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 .row {
+  width: 80%;
   text-align: center;
   justify-content: center;
   align-items: center;
