@@ -1,0 +1,1112 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3%;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 7%;
+  width: 100%;
+  height: 40%;
+}
+
+.carousel {
+  height: 90%;
+  width: 40%;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.collapse {
+  justify-content: right;
+}
+
+a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+.pedido {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  font-size: 0;
+}
+
+li {
+  display: inline-block;
+  font-size: 14px;
+  list-style: none;
+  text-align: inline;
+  text-decoration: none;
+}
+
+li a {
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 10px;
+  margin-right: 50px;
+  color: rgb(0, 0, 0);
+}
+
+li a:visited {
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 10px;
+  margin-right: 50px;
+  color: rgb(126, 117, 117);
+}
+
+ul ul {
+  position: absolute;
+  display: none;
+}
+
+ul ul li {
+  display: block;
+}
+
+ul li:hover ul {
+  display: block;
+  padding-left: 0%;
+  background-color: rgb(151, 14, 14);
+}
+
+.sublista {
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+
+.sublista:visited {
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 10px;
+  margin-right: 50px;
+  color: white;
+}
+
+footer {
+  background-image: linear-gradient(to left, crimson, black);
+  width: 100%;
+}
+
+p {
+  height: 30%;
+  width: 100%;
+  text-align: left;
+  padding-left: 5%;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font: size 0.9em;
+}
+
+@mixin atributos($color, $alineacion, $tamano, $tipoLetra) {
+  color: $color;
+  text-align: $alineacion;
+  font-size: $tamano;
+  font-family: $tipoLetra;
+}
+
+h1 {
+  @include atributos(
+    rgb(0, 0, 0),
+    center,
+    xx-large,
+    "Allerta Stencil"
+  );
+}
+h2 {
+  @include atributos(
+  rgb(255, 255, 255),
+  center,
+  xx-large,
+  Verdana
+  );
+}
+h5{
+    @include atributos(
+        rgb(0, 0, 0),
+        center,
+        medium,
+        "Allerta Stencil"
+      );    
+}
+
+.display-4 {
+  padding-top: 10%;
+}
+
+h4 {
+  @include atributos(
+    rgb(255, 255, 255),
+    center,
+    (xx-large, sans-serif),
+    "Verdana"
+  );
+}
+
+.display-5 {
+  color: white;
+  text-align: center;
+}
+
+.row {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-fluid {
+  width: 70%;
+  height: 70%;
+}
+
+.itemMuestra {
+  height: 50%;
+  width: 50%;
+}
+
+#label {
+  color: white;
+}
+
+#tituloseccion2 {
+  width: 100%;
+  height: 5%;
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 10%;
+  color: black;
+}
+
+#tituloconsulta {
+  color: white;
+  padding-top: 6%;
+}
+
+#scroll {
+  position: relative;
+  top: 30%;
+}
+
+#seleccion {
+  width: 40%;
+}
+
+@mixin btnAtributos($color, $bgcolor, $brcolor, $width, $heigth) {
+  color: $color;
+  background-color: $bgcolor;
+  border-color: $brcolor;
+  width: $width;
+  height: $heigth;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.btnFormulario {
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 100%);
+}
+
+.btnFormulario:hover {
+  animation: heartBeat;
+  animation-duration: 3s;
+}
+
+.botonProducto {
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 40%, 6%);
+}
+
+.botonProducto:hover {
+  animation: heartBeat;
+  animation-duration: 3s;
+}
+
+.enviar {
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 6%, 4%);
+}
+
+.hacerPedido {
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 5%);
+}
+.hacerPedido:hover {
+  animation: heartBeat;
+  animation-duration: 5s;
+}
+.seccion {
+  width: 100%;
+  height: 600px;
+}
+
+.misproductos {
+  @extend .seccion;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../images/fondoinsiders.svg");
+}
+
+video {
+  width: 90%;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  z-index: -10;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#tabla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  border-color: black;
+  border-left: solid 10px;
+  border-right: solid 10px;
+}
+
+#datos-nombre {
+  text-align: center;
+  width: 74%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#datos-localidad {
+  text-align: center;
+  width: 76%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#datos-numero {
+  width: 74%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#label {
+  display: inline-flex;
+  color: white;
+}
+
+#label-numero {
+  color: white;
+  display: inline-flex;
+}
+
+#label-localidad {
+  display: inline-flex;
+  color: white;
+}
+
+#label-nombre {
+  display: inline-flex;
+  color: white;
+}
+
+#form-completar {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+  height: 70%;
+}
+.botones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+
+  &__btnFormulario {
+    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 70%);
+  }
+}
+
+textarea {
+  height: 50%;
+  width: 75%;
+}
+
+.inicio {
+  @extend .seccion;
+  background-image: url("../../images/fondoinsiders.svg");
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  &__titulo1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Allerta Stencil", sans-serif;
+    padding-top: 15%;
+  }
+  &__titulo2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+}
+
+.bienvenida {
+  @extend .seccion;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-color: black;
+  border-left: solid 10px;
+}
+.row {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.estampasRemeras {
+  @extend .seccion;
+  display: block;
+  background-image: url("../../images/fondoscarfaces.svg");
+}
+
+.productosVenta {
+  width: 25%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__p {
+    text-align: center;
+    color: white;
+    height: 8%;
+  }
+
+  &__tituloproductos {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  &__productoMuestra {
+    width: 60%;
+    height: 60%;
+  }
+
+  &__botonProducto {
+    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 40%, 6%);
+  }
+
+  &__botonProducto:hover {
+    animation: heartBeat;
+    animation-duration: 3s;
+  }
+
+  &__precio {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background-image: url("../../images/fondoinsiders.svg");
+  height: 600px;
+  &__titulo {
+    color: white;
+  }
+}
+
+.contactoWhastapp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 10%;
+  height: 5%;
+  position: relative;
+  justify-content: flex-start;
+
+  &__logocontacto {
+    height: 100%;
+    width: 90%;
+  }
+
+  &__p {
+    color: white;
+    font-size: medium;
+  }
+}
+
+.galeria {
+  @extend .seccion;
+  background-image: url("../../images/fondoinsiders.svg");
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+  .titulo {
+    color: white;
+  }
+
+  .grilla {
+    display: grid;
+    width: 80%;
+    height: 75%;
+    justify-items: center;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50% ;
+    grid-template-areas:
+      "item item item item item"
+      "item item item item item";
+  }    
+    .caja {
+        justify-self: stretch;
+
+    }
+    .item{ 
+     width: 98%;
+      } 
+    
+    .caja:hover {
+      transform: scale(1.5, 1.5);
+      z-index: 100;
+    }
+
+.detallesRemeras {
+  display: grid;
+  width: 80%;
+  height: 100%;
+  justify-items: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 16% 21% 21% 21% 21%;
+  grid-template-areas:
+    "titulo    titulo    titulo   titulo"
+    "detalles detalles detalles detalles"
+    "detalles detalles detalles detalles"
+    "detalles detalles detalles detalles"
+    "detalles detalles detalles detalles";
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    justify-self: stretch;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(196, 41, 41);
+  }
+
+  .detalles {
+    display: flex;
+    flex-direction: column;
+    justify-self: stretch;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+  }
+
+
+.nosotros {
+  background-image: url("../../images/fondoinsiders.svg");
+  height: 600px;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  &__titulo {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: xx-large;
+    font-family: "Allerta Stencil", sans-serif;
+  }
+}
+
+.marca {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  border-left: solid 10px;
+
+  &__logomarca {
+    height: 20%;
+    width: 20%;
+    margin-right: 0%;
+  }
+
+  &__p {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    width: 40%;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: xx-large;
+  }
+}
+
+.footer {
+  display: flex;
+  background-image: linear-gradient(to left, crimson, black);
+  height: 15%;
+  width: 100%;
+
+  &__contenedor {
+    display: grid;
+    width: 100%;
+    height: 75%;
+    justify-items: center;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 100%;
+    grid-template-areas: "seguinos pago nav";
+
+    &__seguinos {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+
+      &__p {
+        font-size: 100%;
+        width: 100%;
+        color: white;
+      }
+
+      &__logoinstagram {
+        height: 50%;
+        width: 10%;
+        position: relative;
+        left: 30%;
+        bottom: 15%;
+      }
+
+      &__logofacebook {
+        height: 50%;
+        width: 10%;
+        left: 30%;
+        bottom: 15%;
+        position: relative;
+      }
+    }
+
+    &__pago {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+
+      &__mediodepago {
+        color: white;
+        font: 0.2 em;
+        list-style: none;
+        text-decoration: none;
+      }
+    }
+
+    &__nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 30%;
+
+      & nav ul li a {
+        width: 80%;
+        height: 40%;
+        color: white;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+/*tablet*/
+@media only screen and(max-width: 768px) {
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../images/fondoinsiders.svg");
+    text-align: center;
+    justify-content: center;
+    &__titulo1 {
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-family: "Allerta Stencil", sans-serif;
+      padding-top: 15%;
+    }
+    &__titulo2 {
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: x-large;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+  }
+}
+.inicio__btn {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.marca {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    border-left: solid 10px;
+
+    &__logomarca {
+      height: 20%;
+      width: 20%;
+      margin-right: 0%;
+    }
+
+    &__p {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      justify-content: center;
+      width: 40%;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      font-size: medium;
+    }
+  }
+  .misproductos {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../images/fondoinsiders.svg");
+  }
+  .productosVenta {
+    width: 33.33%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__p {
+      text-align: center;
+      color: white;
+      height: 8%;
+    }
+
+    &__tituloproductos {
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    &__productoMuestra {
+      width: 60%;
+      height: 60%;
+    }
+
+    &__botonProducto {
+      @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 50%, 20%);
+    }
+
+    &__botonProducto:hover {
+      animation: heartBeat;
+      animation-duration: 3s;
+    }
+
+    &__precio {
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: x-large;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+  }
+  #seleccion {
+    width: 50%;
+  }
+  .detallesRemeras {
+    display: grid;
+    width: 98%;
+    height: 40%;
+    justify-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 16% 21% 21% 21% 21%;
+    grid-template-areas:
+      "titulo    titulo    titulo   titulo"
+      "detalles detalles detalles detalles"
+      "detalles detalles detalles detalles"
+      "detalles detalles detalles detalles"
+      "detalles detalles detalles detalles";
+    background-color: rgb(48, 240, 80);
+  
+    &__titulos {
+      display: flex;
+      flex-direction: column;
+      justify-self: stretch;
+      justify-content: center;
+      text-align: center;
+      background-color: rgb(196, 41, 41);
+    }
+  
+    &__detalles {
+      display: flex;
+      flex-direction: column;
+      justify-self: stretch;
+      justify-content: center;
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+    }
+  }
+  h5{
+    @include atributos(
+        rgb(0, 0, 0),
+        center,
+        xx-small,
+        "Allerta Stencil"
+      );    
+}
+.galeria {
+    background-image: url("../../images/fondoinsiders.svg");
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+    .titulo {
+      color: white;
+    }
+
+    .grilla {
+      display: grid;
+      width: 80%;
+      height: 75%;
+      justify-items: center;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      grid-template-rows: 50% 50% ;
+      grid-template-areas:
+        "item item item item item"
+        "item item item item item";
+    }    
+      .caja {
+          justify-self: stretch;
+  
+      }
+      .item{ 
+       width: 98%;
+        } 
+      
+      .caja:hover {
+        transform: scale(1.5, 1.5);
+        z-index: 100;
+      }
+
+
+
+
+/*celular*/
+@media (max-width: 320px) {
+  footer {
+    display: flex;
+    background-image: linear-gradient(to left, crimson, black);
+    height: 20%;
+    width: 100%;
+  }
+
+  #logofacebook {
+    height: 35%;
+    width: 35%;
+  }
+
+  #logoinstagram {
+    height: 35%;
+    width: 35%;
+  }
+
+  .navPie {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .navPie nav ul li {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pie {
+    display: grid;
+    width: 100%;
+    height: 75%;
+    justify-items: center;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100%;
+    grid-template-areas: "seguinos pago navPie";
+  }
+
+  .seguinos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+
+  .seguinos p {
+    font-size: 70%;
+    width: 100%;
+    color: white;
+  }
+
+  .pago {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .pago a {
+    font-size: 100%;
+  }
+
+   .marca {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    border-left: solid 10px;
+
+    &__logomarca {
+      height: 20%;
+      width: 20%;
+      margin-right: 0%;
+    }
+
+    &__p {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      justify-content: center;
+      width: 40%;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      font-size: small;
+    }
+  }
+
+  .productosVenta {
+    width: 33.33%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__p {
+      text-align: center;
+      color: white;
+      height: 8%;
+    }
+
+    &__tituloproductos {
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    &__productoMuestra {
+      width: 60%;
+      height: 60%;
+    }
+
+    &__botonProducto {
+      @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 90%, 30%);
+    }
+
+    &__botonProducto:hover {
+      animation: heartBeat;
+      animation-duration: 3s;
+    }
+
+    &__precio {
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: x-large;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+  }
+  #seleccion {
+    width: 80%;
+  }
+  #form-completar {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 70%;
+  }
+  .botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+
+    &__btnFormulario {
+      @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 90%, 70%);
+    }
+  }
+  .detallesRemeras {
+    display: grid;
+    width: 100%;
+    height: 90%;
+    justify-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 16% 21% 21% 21% 21%;
+    grid-template-areas:
+      "titulo    titulo    titulo   titulo"
+      "detalles detalles detalles detalles"
+      "detalles detalles detalles detalles"
+      "detalles detalles detalles detalles"
+      "detalles detalles detalles detalles";
+  }
+    .titulos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-self: stretch;
+      justify-content: center;
+      text-align: center;
+      background-color: rgb(196, 41, 41);
+    }
+  
+    .detalles {
+      display: flex;
+      flex-direction: column;
+      justify-self: stretch;
+      justify-content: center;
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+    }
+  
+h5{
+font-size: xx-small;
+}
+.galeria {
+  background-image: url("../../images/fondoinsiders.svg");
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+  .titulo {
+    color: white;
+  }
+
+  .grilla {
+    display: grid;
+    width: 90%;
+    height: 20%;
+    justify-items: center;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50% 50% 50% 50%;
+    grid-template-areas:
+      "item item item item item"
+      "item item item item item";
+  }
+
+
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../images/fondoinsiders.svg");
+    text-align: center;
+    justify-content: center;
+    &__titulo1 {
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-family: "Allerta Stencil", sans-serif;
+      padding-top: 15%;
+    }
+    &__titulo2 {
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: x-large;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+  }
+  .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+    width: 100%;
+    height: 20%;
+  }
+  .inicio__btn {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
