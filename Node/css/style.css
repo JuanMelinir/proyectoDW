@@ -10,7 +10,6 @@ header {
   padding-left: 3%; }
 
 .slider {
-  background-color: #0bb819;
   display: flex;
   align-items: center;
   top: 7%;
@@ -18,7 +17,6 @@ header {
   height: 40%; }
 
 .itemMuestra {
-  background-color: darkgoldenrod;
   height: 60%;
   width: 60%; }
 
@@ -132,7 +130,6 @@ h4 {
   text-align: center; }
 
 .d-block {
-  background-color: darkgoldenrod;
   height: 100%;
   width: 100%; }
 
@@ -314,8 +311,10 @@ textarea {
   background-image: url("../../images/fondo1.svg");
   background-size: 100%;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .inicio__titulo1 {
     color: white;
     text-align: center;
@@ -336,7 +335,6 @@ textarea {
   border-left: solid 10px; }
 
 .container {
-  background-color: aqua;
   flex-direction: column;
   display: flex;
   width: 45%;
@@ -370,15 +368,13 @@ p {
 .estampasRemeras {
   display: flex;
   justify-content: center;
-  background-image: url("../../images/fondoscarfaces.svg"); }
+  background-image: url("../../images/fondomosaico.svg"); }
 
 .estampas {
-  background-color: #008327;
   width: 60%;
   height: 60%; }
 
 .estampa {
-  background-color: deeppink;
   width: 70%; }
 
 .productosVenta {
@@ -512,6 +508,8 @@ p {
     font-family: "Allerta Stencil", sans-serif; }
 
 .marca {
+  background-image: url("../../images/fondo3.svg");
+  background-size: 90%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -528,7 +526,8 @@ p {
     flex-direction: column;
     text-align: left;
     justify-content: center;
-    width: 40%;
+    width: 70%;
+    color: white;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-size: xx-large; }
 
