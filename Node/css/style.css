@@ -211,7 +211,7 @@ h4 {
   animation: heartBeat;
   animation-duration: 5s; }
 
-.seccion, .misproductos, .inicio, .bienvenida, .estampasRemeras, .galeria {
+.seccion, .misproductos, .inicio, .estampasRemeras, .galeria {
   width: 100%;
   height: 600px; }
 
@@ -220,7 +220,7 @@ h4 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-image: url("../../images/fondoinsiders.svg"); }
+  background-image: url("../../images/fondomosaico.svg"); }
 
 video {
   width: 90%;
@@ -327,6 +327,8 @@ textarea {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
 
 .bienvenida {
+  width: 100%;
+  height: 800px;
   display: inline-flex;
   text-align: center;
   justify-content: center;
@@ -378,7 +380,7 @@ p {
   width: 70%; }
 
 .productosVenta {
-  width: 25%;
+  width: 20%;
   height: 40%;
   display: flex;
   flex-direction: column;
@@ -440,7 +442,8 @@ p {
     font-size: medium; }
 
 .galeria {
-  background-image: url("../../images/fondoinsiders.svg");
+  background-image: url("../../images/fondo4.svg");
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -471,8 +474,8 @@ p {
 
 .detallesRemeras {
   display: grid;
-  width: 80%;
-  height: 100%;
+  width: 60%;
+  height: 55%;
   justify-items: center;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 16% 21% 21% 21% 21%;
@@ -498,9 +501,11 @@ p {
   background-image: url("../../images/fondoinsiders.svg");
   height: 600px;
   width: 100%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
   .nosotros__titulo {
     color: white;
     text-align: center;
@@ -521,15 +526,24 @@ p {
     height: 20%;
     width: 20%;
     margin-right: 0%; }
-  .marca__p {
+  .marca__nosotros {
+    background-color: white;
+    opacity: 0.5;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    text-align: left;
+    text-align: center;
     justify-content: center;
-    width: 70%;
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: xx-large; }
+    align-items: center;
+    width: 60%;
+    height: 40%;
+    padding-left: 0%;
+    color: black;
+    font-family: Georgia, Times;
+    font-weight: 200;
+    font-size: large; }
 
 .footer {
   display: flex;
@@ -638,7 +652,7 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-image: url("../../images/fondoinsiders.svg"); }
+  background-image: url("../../images/fondomosaico.svg"); }
 
 .productosVenta {
   width: 33.33%;
@@ -663,7 +677,7 @@ p {
     color: white;
     background-color: crimson;
     border-color: crimson;
-    width: 50%;
+    width: 30%;
     height: 20%;
     margin-bottom: 0 px;
     border-radius: 45px;
@@ -679,11 +693,11 @@ p {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
 
 #seleccion {
-  width: 50%; }
+  width: 30%; }
 
 .detallesRemeras {
   display: grid;
-  width: 98%;
+  width: 70%;
   height: 40%;
   justify-items: center;
   grid-template-columns: 25% 25% 25% 25%;
@@ -712,7 +726,7 @@ h5 {
   font-family: "Allerta Stencil"; }
 
 .galeria {
-  background-image: url("../../images/fondoinsiders.svg");
+  background-image: url("../../images/fondo4.svg");
   height: 600px;
   width: 100%;
   display: flex;
