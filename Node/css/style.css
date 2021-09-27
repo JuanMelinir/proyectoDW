@@ -10,16 +10,17 @@ header {
   padding-left: 3%; }
 
 .slider {
+  background-color: #0bb819;
   display: flex;
-  justify-content: center;
   align-items: center;
   top: 7%;
   width: 40%;
   height: 40%; }
 
-.carousel {
-  height: 90%;
-  width: 80%; }
+.itemMuestra {
+  background-color: darkgoldenrod;
+  height: 60%;
+  width: 60%; }
 
 .navbar {
   width: 100%; }
@@ -130,9 +131,10 @@ h4 {
   color: white;
   text-align: center; }
 
-.itemMuestra {
-  height: 50%;
-  width: 50%; }
+.d-block {
+  background-color: darkgoldenrod;
+  height: 100%;
+  width: 100%; }
 
 #label {
   color: white; }
@@ -334,15 +336,16 @@ textarea {
   border-left: solid 10px; }
 
 .container {
+  background-color: aqua;
   flex-direction: column;
   display: flex;
-  width: 50%;
+  width: 45%;
   text-align: center;
   justify-content: center;
   align-items: center; }
 
 .row {
-  width: 80%;
+  width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center; }
@@ -365,8 +368,18 @@ p {
   height: 50%; }
 
 .estampasRemeras {
-  display: block;
+  display: flex;
+  justify-content: center;
   background-image: url("../../images/fondoscarfaces.svg"); }
+
+.estampas {
+  background-color: #008327;
+  width: 60%;
+  height: 60%; }
+
+.estampa {
+  background-color: deeppink;
+  width: 70%; }
 
 .productosVenta {
   width: 25%;
