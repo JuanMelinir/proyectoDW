@@ -196,7 +196,7 @@ h4 {
   animation: heartBeat;
   animation-duration: 5s; }
 
-.seccion, .misproductos, .inicio, .estampasRemeras, .galeria {
+.seccion, .misproductos, .inicio, .estampasRemeras, .detallesProductos, .galeria {
   width: 100%;
   height: 600px; }
 
@@ -205,7 +205,7 @@ h4 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-image: url("../../images/fondomosaico.svg"); }
+  background-image: url("../../images/productos.png"); }
 
 video {
   width: 90%;
@@ -264,7 +264,7 @@ video {
   display: inline-flex;
   color: white; }
 
-#form-completar {
+.form-completar {
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -277,23 +277,24 @@ video {
   justify-content: center;
   width: 100%;
   height: 10%; }
-  .botones__btnFormulario {
-    color: white;
-    background-color: crimson;
-    border-color: crimson;
-    width: 10%;
-    height: 70%;
-    margin-bottom: 0 px;
-    border-radius: 45px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px; }
+
+.btnFormulario {
+  color: white;
+  background-color: crimson;
+  border-color: crimson;
+  width: 10%;
+  height: 70%;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
 
 textarea {
   height: 50%;
   width: 75%; }
 
 .inicio {
-  background-image: url("../../images/fondo1.svg");
+  background-image: url("../../images/fondoPortadaInicio.png");
   background-size: 100%;
   text-align: center;
   display: flex;
@@ -371,14 +372,15 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  width: 60%; }
 
 .slide {
-  width: 80%; }
+  width: 100%; }
 
 .productosVenta {
-  width: 20%;
-  height: 40%;
+  width: 30%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -392,13 +394,14 @@ p {
     text-align: center;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  .productosVenta__productoMuestra {
-    width: 60%;
-    height: 60%; }
   .productosVenta__precio {
     text-align: center;
-    color: white;
+    color: #c50a0a;
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.productoMuestra {
+  width: 30%;
+  height: 30%; }
 
 .botonProducto {
   color: white;
@@ -420,7 +423,8 @@ p {
   flex-direction: column;
   align-items: center;
   align-content: center;
-  background-image: url("../../images/fondo5.svg");
+  background-image: url("../../images/contacto.png");
+  background-size: 100%;
   height: 600px; }
   .contacto__titulo {
     color: white; }
@@ -440,8 +444,17 @@ p {
     color: white;
     font-size: medium; }
 
+.detallesProductos {
+  background-image: url("../../images/detalles.png");
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+
 .galeria {
-  background-image: url("../../images/fondo4.svg");
+  background-image: url("../../images/galeria.png");
   background-size: 100%;
   display: flex;
   flex-direction: column;
@@ -465,16 +478,16 @@ p {
   justify-self: stretch; }
 
 .item {
-  width: 98%; }
+  width: 95%; }
 
 .caja:hover {
   transform: scale(1.5, 1.5);
   z-index: 100; }
 
-.detallesRemeras {
+.detallesRemera {
   display: grid;
-  width: 60%;
-  height: 55%;
+  width: 70%;
+  height: 35%;
   justify-items: center;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 16% 21% 21% 21% 21%;
@@ -496,8 +509,13 @@ p {
   text-align: center;
   background-color: white; }
 
+.titulo_item {
+  text-align: center;
+  font-size: medium; }
+
 .nosotros {
-  background-image: url("../../images/fondoinsiders.svg");
+  background-image: url("../../images/conocenos.png");
+  background-size: 100%;
   height: 600px;
   width: 100%;
   display: flex;
@@ -511,38 +529,39 @@ p {
     font-size: xx-large;
     font-family: "Allerta Stencil", sans-serif; }
 
+.video {
+  width: 70%; }
+
 .marca {
-  background-image: url("../../images/fondo3.svg");
-  background-size: 90%;
+  background-image: url("../../images/conocenosmarca.png");
+  background-size: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
+  flex-direction: row-reverse;
+  padding-right: 10%;
   width: 100%;
   height: 600px;
   border-left: solid 10px; }
-  .marca__logomarca {
-    height: 20%;
-    width: 20%;
-    margin-right: 0%; }
-  .marca__nosotros {
-    background-color: white;
-    opacity: 0.5;
-    margin-bottom: 0 px;
-    border-radius: 45px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    height: 40%;
-    padding-left: 0%;
-    color: black;
-    font-family: Georgia, Times;
-    font-weight: 200;
-    font-size: large; }
+
+.logoMarca {
+  height: 20%;
+  width: 20%;
+  margin-right: 0%; }
+
+.p__nosotros {
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  display: flex;
+  text-align: center;
+  width: 40%;
+  height: 30%;
+  padding-left: 0%;
+  color: black;
+  font-family: Georgia, Times;
+  font-weight: 200;
+  font-size: large; }
 
 .footer {
   display: flex;
@@ -563,6 +582,7 @@ p {
       width: 100%;
       height: 100%; }
       .footer__contenedor__seguinos__p {
+        text-align: left;
         font-size: 100%;
         width: 100%;
         color: white; }
@@ -599,214 +619,3 @@ p {
         width: 80%;
         height: 40%;
         color: white; }
-
-/*celular*/
-@media (min-width: 320px) {
-  footer {
-    display: flex;
-    background-image: linear-gradient(to left, crimson, black);
-    height: 20%;
-    width: 100%; }
-  #logofacebook {
-    height: 35%;
-    width: 35%; }
-  #logoinstagram {
-    height: 35%;
-    width: 35%; }
-  .navPie {
-    display: flex;
-    width: 100%;
-    height: 100%; }
-  .navPie nav ul li {
-    width: 100%;
-    height: 100%; }
-  .pie {
-    display: grid;
-    width: 100%;
-    height: 75%;
-    justify-items: center;
-    grid-template-columns: 30% 40% 30%;
-    grid-template-rows: 100%;
-    grid-template-areas: "seguinos pago navPie"; }
-  .seguinos {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%; }
-  .seguinos p {
-    font-size: 70%;
-    width: 100%;
-    color: white; }
-  .pago {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%; }
-  .pago a {
-    font-size: 100%; }
-  .marca {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 600px;
-    border-left: solid 10px; }
-    .marca__logomarca {
-      height: 40%;
-      width: 35%;
-      margin-right: 0%; }
-    .marca__nosotros {
-      background-color: white;
-      opacity: 0.5;
-      margin-bottom: 0 px;
-      border-radius: 45px;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;
-      display: flex;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      width: 60%;
-      height: 60%;
-      padding-left: 0%;
-      color: black;
-      font-family: Georgia, Times;
-      font-weight: 200;
-      font-size: medium; }
-  .productosVenta {
-    width: 33.33%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; }
-    .productosVenta__p {
-      text-align: center;
-      color: white;
-      height: 8%; }
-    .productosVenta__tituloproductos {
-      text-align: center;
-      color: white;
-      font-family: Verdana, Geneva, Tahoma, sans-serif; }
-    .productosVenta__productoMuestra {
-      width: 60%;
-      height: 60%; }
-    .productosVenta__botonProducto {
-      color: white;
-      background-color: crimson;
-      border-color: crimson;
-      width: 90%;
-      height: 30%;
-      margin-bottom: 0 px;
-      border-radius: 45px;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px; }
-    .productosVenta__botonProducto:hover {
-      animation: heartBeat;
-      animation-duration: 3s; }
-    .productosVenta__precio {
-      color: white;
-      text-align: center;
-      font-size: x-large;
-      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
-  #seleccion {
-    width: 80%; }
-  #form-completar {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: 70%; }
-  .botones {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 10%; }
-    .botones__btnFormulario {
-      color: white;
-      background-color: crimson;
-      border-color: crimson;
-      width: 90%;
-      height: 70%;
-      margin-bottom: 0 px;
-      border-radius: 45px;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px; }
-  .detallesRemeras {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    justify-items: center;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 15% 21% 21% 21% 21%;
-    grid-template-areas: "titulo    titulo    titulo   titulo" "detalles detalles detalles detalles" "detalles detalles detalles detalles" "detalles detalles detalles detalles" "detalles detalles detalles detalles"; }
-  .titulos {
-    display: flex;
-    flex-direction: column;
-    justify-self: stretch;
-    justify-content: center;
-    background-color: #c42929; }
-  .titulo_item {
-    text-align: center;
-    font-size: xx-small; }
-  .detalles {
-    display: flex;
-    justify-self: stretch;
-    justify-content: center;
-    text-align: center;
-    background-color: white; }
-  h5 {
-    font-size: xx-small; }
-  .galeria {
-    height: 600px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center; }
-  .titulo {
-    color: white; }
-  .grilla {
-    display: grid;
-    width: 90%;
-    height: 20%;
-    justify-items: center;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 50% 50% 50% 50% 50%;
-    grid-template-areas: "item item item item item" "item item item item item"; }
-  .inicio {
-    display: flex;
-    flex-direction: column;
-    background-size: cover;
-    text-align: center;
-    justify-content: center; }
-    .inicio__titulo1 {
-      color: white;
-      text-align: center;
-      font-family: "Allerta Stencil", sans-serif;
-      padding-top: 15%; }
-    .inicio__titulo2 {
-      color: white;
-      text-align: center;
-      font-size: x-large;
-      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
-  .slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 10%;
-    width: 100%;
-    height: 20%; }
-  .inicio__btn {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto; }
-  h4 {
-    color: antiquewhite;
-    font-size: 300%; }
-  .estampas {
-    width: 80%; } }
