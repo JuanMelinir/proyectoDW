@@ -619,3 +619,548 @@ p {
         width: 80%;
         height: 40%;
         color: white; }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column; }
+  header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3%; }
+  .slider {
+    display: flex;
+    align-items: center;
+    top: 7%;
+    width: 30%;
+    height: 30%; }
+  .itemMuestra {
+    height: 60%;
+    width: 60%; }
+  .navbar {
+    width: 100%; }
+  .collapse {
+    justify-content: right; }
+  a {
+    color: white;
+    list-style: none;
+    text-decoration: none; }
+  .pedido {
+    color: white;
+    list-style: none;
+    text-decoration: none; }
+  ul {
+    list-style: none;
+    font-size: 0; }
+  li {
+    display: inline-block;
+    font-size: 14px;
+    list-style: none;
+    text-align: inline;
+    text-decoration: none; }
+  li a {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin-left: 10px;
+    margin-right: 50px;
+    color: black; }
+  li a:visited {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin-left: 10px;
+    margin-right: 50px;
+    color: #7e7575; }
+  ul ul {
+    position: absolute;
+    display: none; }
+  ul ul li {
+    display: block; }
+  ul li:hover ul {
+    display: block;
+    padding-left: 0%;
+    background-color: #970e0e; }
+  .sublista {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: white; }
+  .sublista:visited {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin-left: 10px;
+    margin-right: 50px;
+    color: white; }
+  footer {
+    background-image: linear-gradient(to left, crimson, black);
+    width: 100%; }
+  p {
+    height: 30%;
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font: size 0.9em; }
+  h1 {
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+    font-family: "Allerta Stencil"; }
+  .h2 {
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Verdana; }
+  h5 {
+    color: black;
+    text-align: center;
+    font-size: xx-small;
+    font-family: "Allerta Stencil"; }
+  .display-4 {
+    padding-top: 10%; }
+  h4 {
+    color: white;
+    text-align: center;
+    font-size: xx-large, sans-serif;
+    font-family: "Verdana"; }
+  .display-5 {
+    color: white;
+    text-align: center; }
+  .d-block {
+    height: 100%;
+    width: 100%; }
+  #label {
+    color: white; }
+  #tituloseccion2 {
+    width: 100%;
+    height: 5%;
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 10%;
+    color: black; }
+  #tituloconsulta {
+    color: white;
+    padding-top: 6%; }
+  #scroll {
+    position: relative;
+    top: 30%; }
+  .seleccion {
+    width: 80%; }
+  .btnFormulario {
+    color: white;
+    background-color: crimson;
+    border-color: crimson;
+    width: 10%;
+    height: 100%;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  .btnFormulario:hover {
+    animation: heartBeat;
+    animation-duration: 3s; }
+  .enviar {
+    color: white;
+    background-color: crimson;
+    border-color: crimson;
+    width: 6%;
+    height: 4%;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  .hacerPedido {
+    color: white;
+    background-color: crimson;
+    border-color: crimson;
+    width: 10%;
+    height: 5%;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  .hacerPedido:hover {
+    animation: heartBeat;
+    animation-duration: 5s; }
+  .seccion, .misproductos, .inicio, .estampasRemeras, .detallesProductos, .galeria {
+    width: 100%;
+    height: 600px; }
+  .misproductos {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../images/productos.png"); }
+  video {
+    width: 90%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    z-index: -10; }
+  @keyframes aparecer {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  #tabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    border-color: black;
+    border-left: solid 10px;
+    border-right: solid 10px; }
+  #datos-nombre {
+    text-align: center;
+    width: 74%;
+    margin-left: auto;
+    margin-right: auto; }
+  #datos-localidad {
+    text-align: center;
+    width: 76%;
+    margin-left: auto;
+    margin-right: auto; }
+  #datos-numero {
+    width: 74%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+  #label {
+    display: inline-flex;
+    color: white; }
+  #label-numero {
+    color: white;
+    display: inline-flex; }
+  #label-localidad {
+    display: inline-flex;
+    color: white; }
+  #label-nombre {
+    display: inline-flex;
+    color: white; }
+  .form-completar {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 95%;
+    height: 70%; }
+  .botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%; }
+  .btnFormulario {
+    color: white;
+    background-color: crimson;
+    border-color: crimson;
+    width: 30%;
+    height: 50%;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  textarea {
+    height: 50%;
+    width: 75%; }
+  .inicio {
+    width: 100%;
+    height: 600px;
+    background-image: url("../../images/fondoPortadaInicio.png");
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .titulo1 {
+    color: black;
+    text-align: center;
+    font-family: "Allerta Stencil", sans-serif;
+    padding-top: 15%; }
+  .titulo2 {
+    color: black;
+    text-align: center;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
+  .btn {
+    width: 50%;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  .bienvenida {
+    width: 100%;
+    height: 800px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    border-left: solid 10px; }
+  .container {
+    flex-direction: column;
+    display: flex;
+    width: 45%;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+  .row {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+  p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: large; }
+  .muestraRemera {
+    width: 60%;
+    heigth: 40%; }
+  .img-fluid {
+    width: 50%;
+    height: 50%; }
+  .estampasRemeras {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../images/fondomosaico.svg"); }
+  .estampas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%; }
+  .slide {
+    width: 100%; }
+  .productosVenta {
+    width: 45%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .productosVenta__p {
+      text-align: center;
+      color: white;
+      height: 8%; }
+    .productosVenta__tituloproductos {
+      text-align: center;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    .productosVenta__precio {
+      text-align: center;
+      color: #c50a0a;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .productoMuestra {
+    width: 100%;
+    height: 80%; }
+  .botonProducto {
+    color: white;
+    background-color: crimson;
+    border-color: crimson;
+    width: 95%;
+    height: 15%;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  .botonProducto:hover {
+    animation: heartBeat;
+    animation-duration: 3s; }
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-image: url("../../images/contacto.png");
+    background-size: cover;
+    height: 600px; }
+    .contacto__titulo {
+      color: white; }
+  .contactoWhastapp {
+    width: 40%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .contactoWhastapp__logocontacto {
+      height: 80%;
+      width: 50%; }
+    .contactoWhastapp__p {
+      color: white;
+      font-size: medium; }
+  .detallesProductos {
+    width: 100%;
+    height: 600px;
+    background-image: url("../../images/detalles.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+  .galeria {
+    width: 100%;
+    height: 600px;
+    background-image: url("../../images/galeria.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+  .titulo {
+    color: white; }
+  .grilla {
+    display: grid;
+    width: 100%;
+    height: 20%;
+    justify-items: center;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "item item item item item" "item item item item item"; }
+  .caja {
+    justify-self: stretch; }
+  .item {
+    width: 90%; }
+  .caja:hover {
+    transform: scale(1.5, 1.5);
+    z-index: 100; }
+  .detallesRemera {
+    display: grid;
+    width: 90%;
+    height: 80%;
+    justify-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 16% 21% 21% 21% 21%;
+    grid-template-areas: "titulo    titulo    titulo   titulo" "detalles detalles detalles detalles" "detalles detalles detalles detalles" "detalles detalles detalles detalles" "detalles detalles detalles detalles"; }
+  .titulos {
+    display: flex;
+    flex-direction: column;
+    justify-self: stretch;
+    justify-content: center;
+    text-align: center;
+    background-color: #c42929; }
+  .detalles {
+    display: flex;
+    flex-direction: column;
+    justify-self: stretch;
+    justify-content: center;
+    text-align: center;
+    background-color: white; }
+  .titulo_item {
+    text-align: center;
+    font-size: xx-small; }
+  .nosotros {
+    background-image: url("../../images/conocenos.png");
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .nosotros__titulo {
+      color: white;
+      text-align: center;
+      font-size: xx-large;
+      font-family: "Allerta Stencil", sans-serif; }
+  .video {
+    width: 100%; }
+  .marca {
+    background-image: url("../../images/conocenosmarca.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 10%;
+    width: 100%;
+    height: 600px;
+    border-left: solid 10px; }
+  .logoMarca {
+    height: 20%;
+    width: 20%;
+    margin-right: 0%; }
+  .p__nosotros {
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    display: flex;
+    text-align: center;
+    width: 60%;
+    height: 30%;
+    padding-left: 0%;
+    color: black;
+    font-family: Georgia, Times;
+    font-weight: 200;
+    font-size: large; }
+  .footer {
+    display: flex;
+    background-image: linear-gradient(to left, crimson, black);
+    height: 15%;
+    width: 100%; }
+    .footer__contenedor {
+      display: grid;
+      width: 100%;
+      height: 75%;
+      justify-items: center;
+      grid-template-columns: 30% 30% 40%;
+      grid-template-rows: 100%;
+      grid-template-areas: "seguinos pago nav"; }
+      .footer__contenedor__seguinos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%; }
+        .footer__contenedor__seguinos__p {
+          text-align: left;
+          font-size: 100%;
+          width: 100%;
+          color: white; }
+        .footer__contenedor__seguinos__logoinstagram {
+          height: 50%;
+          width: 30%;
+          position: relative;
+          left: 30%;
+          bottom: 15%; }
+        .footer__contenedor__seguinos__logofacebook {
+          height: 50%;
+          width: 30%;
+          left: 30%;
+          bottom: 15%;
+          position: relative; }
+      .footer__contenedor__pago {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%; }
+        .footer__contenedor__pago__mediodepago {
+          color: white;
+          font-size: 70%;
+          list-style: none;
+          text-decoration: none; }
+      .footer__contenedor__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 30%; }
+        .footer__contenedor__nav nav ul li a {
+          width: 80%;
+          height: 40%;
+          color: white; } }
