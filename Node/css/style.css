@@ -904,7 +904,7 @@ p {
   .container {
     flex-direction: column;
     display: flex;
-    width: 45%;
+    width: 25%;
     text-align: center;
     justify-content: center;
     align-items: center; }
@@ -1101,7 +1101,7 @@ p {
     -webkit-border-radius: 10px;
     display: flex;
     text-align: center;
-    width: 60%;
+    width: 70%;
     height: 30%;
     padding-left: 0%;
     color: black;
@@ -1118,6 +1118,7 @@ p {
       width: 100%;
       height: 75%;
       justify-items: center;
+      align-content: center;
       grid-template-columns: 30% 30% 40%;
       grid-template-rows: 100%;
       grid-template-areas: "seguinos pago nav"; }
@@ -1128,7 +1129,7 @@ p {
         height: 100%; }
         .footer__contenedor__seguinos__p {
           text-align: left;
-          font-size: 100%;
+          font-size: 90%;
           width: 100%;
           color: white; }
         .footer__contenedor__seguinos__logoinstagram {
