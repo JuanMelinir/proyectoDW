@@ -68,9 +68,9 @@ li a:visited {
   text-decoration: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-right: 50px;
-  color: rgb(126, 117, 117);
+  color: rgb(255, 255, 255);
 }
 
 ul ul {
@@ -84,15 +84,15 @@ ul ul li {
 
 ul li:hover ul {
   display: block;
-  padding-left: 0%;
-  background-color: rgb(151, 14, 14);
+  padding-right: 15%;
+  background-color: rgb(167, 8, 8);
 }
 
 .sublista {
   text-decoration: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .sublista:visited {
@@ -102,6 +102,12 @@ ul li:hover ul {
   margin-left: 10px;
   margin-right: 50px;
   color: white;
+}
+.dropdown-menu{
+
+}
+.dropdown-item{
+  
 }
 
 footer {
@@ -1045,7 +1051,7 @@ width: 70%;
     justify-content: center;
     text-align: center;
     width: 95%;
-    height: 70%;
+    height: 75%;
   }
   .botones {
     display: flex;
@@ -1076,13 +1082,13 @@ width: 70%;
     
   }
   .titulo1 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-family: "Allerta Stencil", sans-serif;
     padding-top: 15%;
   }
   .titulo2 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: x-large;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -1309,9 +1315,12 @@ width: 70%;
     }
     .titulo_item{
     text-align: center;
-    font-size:xx-small;
+    font-size:x-small;
     }
-  
+  .contenido{
+    text-align: center;
+    font-size:x-small;  
+  }
   .nosotros {
     background-image: url("../../images/conocenos.png");
     background-size:cover;
@@ -1419,7 +1428,7 @@ align-content: center;
   
         &__mediodepago {
           color: white;
-          padding-top:6%;
+          padding-top:7%;
           font-size: 70%;
           list-style: none;
           text-decoration: none;
