@@ -105,10 +105,20 @@ h1 {
   font-family: "Allerta Stencil"; }
 
 .h2 {
-  color: black;
+  color: white;
   text-align: center;
   font-size: xx-large;
-  font-family: Verdana; }
+  font-family: 'Lobster', cursive; }
+
+.detallesCarosuel {
+  color: white;
+  text-align: center;
+  font-size: medium;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
 
 h5 {
   color: black;
@@ -321,38 +331,69 @@ textarea {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px; }
 
+.btn:hover {
+  animation: heartBeat;
+  animation-duration: 5s; }
+
 .bienvenida {
+  background-image: url("../../images/bienvenidosnosotros.png");
+  background-size: 100%;
   width: 100%;
   height: 800px;
-  display: inline-flex;
-  text-align: center;
-  justify-content: center;
+  display: flex;
   align-items: center;
   border-color: black;
   border-left: solid 10px; }
 
 .container {
-  flex-direction: column;
   display: flex;
-  width: 45%;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
+
+.bienvenida_P {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  justify-content: center;
-  align-items: center; }
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: large; }
+
+.col {
+  background-color: #0a0a0a;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
 
 .row {
-  width: 100%;
+  width: 60%;
   text-align: center;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
 
 p {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
-  width: 80%;
+  width: 100%;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: large; }
+
+.letraEstampas {
+  color: white;
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Lobster', cursive; }
 
 .muestraRemera {
   width: 60%;
@@ -366,7 +407,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../../images/fondomosaico.svg"); }
+  background-image: url("../../images/paredinsiders.png");
+  background-size: 100%; }
 
 .estampas {
   display: flex;
@@ -376,7 +418,7 @@ p {
   width: 60%; }
 
 .slide {
-  width: 100%; }
+  width: 60%; }
 
 .productosVenta {
   width: 30%;
@@ -559,7 +601,7 @@ p {
   height: 30%;
   padding-left: 0%;
   color: black;
-  font-family: Georgia, Times;
+  font-family: 'Architects Daughter', cursive;
   font-weight: 200;
   font-size: large; }
 
@@ -587,17 +629,17 @@ p {
         width: 100%;
         color: white; }
       .footer__contenedor__seguinos__logoinstagram {
-        height: 50%;
+        height: 75%;
         width: 10%;
         position: relative;
-        left: 30%;
-        bottom: 15%; }
+        left: 15%;
+        top: 15%; }
       .footer__contenedor__seguinos__logofacebook {
-        height: 50%;
-        width: 10%;
-        left: 30%;
-        bottom: 15%;
-        position: relative; }
+        height: 75%;
+        width: 8%;
+        left: 15%;
+        position: relative;
+        top: 15%; }
     .footer__contenedor__pago {
       display: flex;
       justify-content: center;
@@ -893,6 +935,7 @@ p {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px; }
   .bienvenida {
+    background-image: url("../../images/bienvenidosnosotros.png");
     width: 100%;
     height: 800px;
     display: inline-flex;
