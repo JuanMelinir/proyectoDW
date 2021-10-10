@@ -206,7 +206,7 @@ h4 {
   animation: heartBeat;
   animation-duration: 5s; }
 
-.seccion, .misproductos, .inicio, .estampasRemeras, .detallesProductos, .galeria {
+.seccion, .misproductos, .inicio, .estampasRemeras, .detallesProductos {
   width: 100%;
   height: 600px; }
 
@@ -496,6 +496,7 @@ p {
   align-items: center; }
 
 .galeria {
+  width: 100%;
   background-image: url("../../images/galeria.png");
   background-size: 100%;
   display: flex;
@@ -506,6 +507,33 @@ p {
 
 .titulo {
   color: white; }
+
+.imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1 rem;
+  width: 90%;
+  height: 80%; }
+
+.imagen {
+  width: 20%;
+  margin-bottom: 0.5 em;
+  display: block;
+  outline: 2px solid #fff;
+  outline-offset: -10px;
+  padding: 5px; }
+
+.column {
+  flex: 20%;
+  padding: 5px; }
+
+.column img {
+  margin-top: 5px; }
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 .grilla {
   display: grid;
@@ -591,14 +619,16 @@ p {
   margin-right: 0%; }
 
 .p__nosotros {
+  background-color: aqua;
   margin-bottom: 0 px;
   border-radius: 45px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   display: flex;
   text-align: center;
-  width: 40%;
-  height: 30%;
+  align-items: center;
+  width: 45%;
+  height: 40%;
   padding-left: 0%;
   color: black;
   font-family: 'Architects Daughter', cursive;
@@ -825,7 +855,7 @@ p {
   .hacerPedido:hover {
     animation: heartBeat;
     animation-duration: 5s; }
-  .seccion, .misproductos, .inicio, .estampasRemeras, .detallesProductos, .galeria {
+  .seccion, .misproductos, .inicio, .estampasRemeras, .detallesProductos {
     width: 100%;
     height: 600px; }
   .misproductos {
