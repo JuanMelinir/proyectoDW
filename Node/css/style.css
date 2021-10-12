@@ -162,9 +162,6 @@ h4 {
   position: relative;
   top: 30%; }
 
-.seleccion {
-  width: 50%; }
-
 .btnFormulario {
   color: white;
   background-color: crimson;
@@ -216,7 +213,7 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("../../images/productos.png");
+  background-image: url("../../images/astronautainsiders.png");
   background-size: cover; }
 
 video {
@@ -431,7 +428,9 @@ p {
   width: 95%;
   text-align: center; }
   .productosVenta__p {
-    color: white; }
+    color: white;
+    text-align: left;
+    width: 40%; }
   .productosVenta__tituloproductos {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
@@ -453,10 +452,13 @@ p {
 
 .productoMuestra {
   height: 80%;
-  background-color: white;
   border-radius: 45px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px; }
+
+.productoMuestra:hover {
+  transform: scale(1.5, 1.5);
+  z-index: 100; }
 
 .botonProducto {
   color: white;
@@ -510,8 +512,8 @@ p {
 
 .galeria {
   width: 100%;
-  background-image: url("../../images/galeria.png");
-  background-size: 100%;
+  background-image: url("../../images/fondonaruto.png");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -525,16 +527,44 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 1 rem;
-  width: 90%;
+  width: 80%;
   height: 80%; }
 
 .imagen {
   width: 20%;
   margin-bottom: 0.5 em;
+  position: relative;
   display: block;
   outline: 2px solid #fff;
   outline-offset: -10px;
   padding: 5px; }
+
+.estampa {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
+
+.contenedor {
+  background-color: #941414;
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  align-items: center;
+  margin: 5px;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
+
+.seleccion {
+  width: 50%; }
 
 .column {
   flex: 20%;
@@ -569,7 +599,7 @@ img {
 
 .detallesRemera {
   display: grid;
-  width: 70%;
+  width: 80%;
   height: 35%;
   justify-items: center;
   grid-template-columns: 25% 25% 25% 25%;
