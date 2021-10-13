@@ -463,7 +463,7 @@ p {
 
 .muestraRemera {
   width: 60%;
-  heigth: 40%;
+  height: 40%;
 
 }
 
@@ -501,7 +501,7 @@ p {
   gap: 1 rem;
   width:95%;
   text-align: center;
-
+margin: 25PX;
   &__p {
     color: rgb(255, 255, 255);
     text-align: left;
@@ -704,18 +704,9 @@ img {
 }
 
 .detallesRemera {
-  display: grid;
-  width: 80%;
-  height: 35%;
+  width: 60%;
   justify-items: center;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 16% 21% 21% 21% 21%;
-  grid-template-areas:
-    "titulo    titulo    titulo   titulo"
-    "detalles detalles detalles detalles"
-    "detalles detalles detalles detalles"
-    "detalles detalles detalles detalles"
-    "detalles detalles detalles detalles";
+    margin: 25px;
 }
 
 .titulos {
@@ -734,6 +725,11 @@ img {
   justify-content: center;
   text-align: center;
   background-color: rgb(255, 255, 255);
+  margin: 5px;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;  
 }
 
 .titulo_item {
@@ -829,16 +825,16 @@ img {
       }
 
       &__logoinstagram {
-        height: 75%;
-        width: 10%;
+        height: 60%;
+        width: 6%;
         position: relative;
         left: 15%;
         top: 15%;
       }
 
       &__logofacebook {
-        height: 75%;
-        width: 8%;
+        height: 60%;
+        width: 6%;
         left: 15%;
         position: relative;
         top: 15%;
@@ -883,7 +879,7 @@ img {
     display: flex;
     flex-direction: column;
   }
-
+  
   header {
     display: flex;
     width: 100%;
@@ -891,7 +887,7 @@ img {
     align-items: center;
     padding-left: 3%;
   }
-
+  
   .slider {
     display: flex;
     align-items: center;
@@ -899,37 +895,37 @@ img {
     width: 30%;
     height: 30%;
   }
-
+  
   .itemMuestra {
     height: 60%;
     width: 60%;
   }
-
+  
   .navbar {
     width: 100%;
   }
-
+  
   .collapse {
     justify-content: right;
   }
-
+  
   a {
     color: white;
     list-style: none;
     text-decoration: none;
   }
-
+  
   .pedido {
     color: white;
     list-style: none;
     text-decoration: none;
   }
-
+  
   ul {
     list-style: none;
     font-size: 0;
   }
-
+  
   li {
     display: inline-block;
     font-size: 14px;
@@ -937,7 +933,7 @@ img {
     text-align: inline;
     text-decoration: none;
   }
-
+  
   li a {
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -946,38 +942,38 @@ img {
     margin-right: 50px;
     color: rgb(0, 0, 0);
   }
-
+  
   li a:visited {
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    margin-left: 10px;
+    margin-left: 0px;
     margin-right: 50px;
-    color: rgb(126, 117, 117);
+    color: rgb(255, 255, 255);
   }
-
+  
   ul ul {
     position: absolute;
     display: none;
   }
-
+  
   ul ul li {
     display: block;
   }
-
+  
   ul li:hover ul {
     display: block;
-    padding-left: 0%;
-    background-color: rgb(151, 14, 14);
+    padding-right: 15%;
+    background-color: rgb(167, 8, 8);
   }
-
+  
   .sublista {
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
   }
-
+  
   .sublista:visited {
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -986,12 +982,12 @@ img {
     margin-right: 50px;
     color: white;
   }
-
+  
   footer {
     background-image: linear-gradient(to left, crimson, black);
     width: 100%;
   }
-
+  
   p {
     height: 30%;
     width: 100%;
@@ -1002,14 +998,14 @@ img {
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font: size 0.9em;
   }
-
+  
   @mixin atributos($color, $alineacion, $tamano, $tipoLetra) {
     color: $color;
     text-align: $alineacion;
     font-size: $tamano;
     font-family: $tipoLetra;
   }
-
+  
   h1 {
     @include atributos(rgb(0, 0, 0),
       center,
@@ -1017,26 +1013,37 @@ img {
       "Allerta Stencil"
     );
   }
-
+  
   .h2 {
-    @include atributos(rgb(0, 0, 0),
-      center,
-      xx-large,
-      Verdana);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Lobster', cursive;
   }
-
+  
+  .detallesCarosuel {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+  }
+  
   h5 {
     @include atributos(rgb(0, 0, 0),
       center,
-      25%,
+      medium,
       "Allerta Stencil"
     );
   }
-
+  
   .display-4 {
     padding-top: 10%;
   }
-
+  
   h4 {
     @include atributos(rgb(255, 255, 255),
       center,
@@ -1044,22 +1051,22 @@ img {
       "Verdana"
     );
   }
-
+  
   .display-5 {
     color: white;
     text-align: center;
   }
-
-
+  
+  
   .d-block {
     height: 100%;
     width: 100%;
   }
-
+  
   #label {
     color: white;
   }
-
+  
   #tituloseccion2 {
     width: 100%;
     height: 5%;
@@ -1068,21 +1075,18 @@ img {
     padding-top: 10%;
     color: black;
   }
-
+  
   #tituloconsulta {
     color: white;
     padding-top: 6%;
   }
-
+  
   #scroll {
     position: relative;
     top: 30%;
   }
-
-  .seleccion {
-    width: 80%;
-  }
-
+  
+  
   @mixin btnAtributos($color, $bgcolor, $brcolor, $width, $heigth) {
     color: $color;
     background-color: $bgcolor;
@@ -1094,44 +1098,44 @@ img {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
   }
-
+  
   .btnFormulario {
     @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 100%);
   }
-
+  
   .btnFormulario:hover {
     animation: heartBeat;
     animation-duration: 3s;
   }
-
+  
   .enviar {
     @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 6%, 4%);
   }
-
+  
   .hacerPedido {
     @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 5%);
   }
-
+  
   .hacerPedido:hover {
     animation: heartBeat;
     animation-duration: 5s;
   }
-
+  
   .seccion {
     width: 100%;
     height: 600px;
   }
-
+  
   .misproductos {
-    width: 100%;
-    height: 600px;
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../../images/productos.png");
+    background-image: url("../../images/astronautainsiders.png");
+    background-size: cover;
   }
-
+  
   video {
     width: 90%;
     height: 70%;
@@ -1140,17 +1144,17 @@ img {
     display: block;
     z-index: -10;
   }
-
+  
   @keyframes aparecer {
     0% {
       opacity: 0;
     }
-
+  
     100% {
       opacity: 1;
     }
   }
-
+  
   #tabla {
     display: flex;
     justify-content: center;
@@ -1160,168 +1164,202 @@ img {
     border-left: solid 10px;
     border-right: solid 10px;
   }
-
+  
   #datos-nombre {
     text-align: center;
     width: 74%;
     margin-left: auto;
     margin-right: auto;
   }
-
+  
   #datos-localidad {
     text-align: center;
     width: 76%;
     margin-left: auto;
     margin-right: auto;
   }
-
+  
   #datos-numero {
     width: 74%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-
+  
   #label {
     display: inline-flex;
     color: white;
   }
-
+  
   #label-numero {
     color: white;
     display: inline-flex;
   }
-
+  
   #label-localidad {
     display: inline-flex;
     color: white;
   }
-
+  
   #label-nombre {
     display: inline-flex;
     color: white;
   }
-
+  
   .form-completar {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 95%;
-    height: 75%;
+    width: 30%;
+    height: 70%;
   }
-
+  
   .botones {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 10%;
-
+  
   }
-
+  
   .btnFormulario {
-    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 30%, 50%);
+    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 70%);
   }
-
+  
   textarea {
     height: 50%;
     width: 75%;
   }
-
+  
   .inicio {
     width: 100%;
     height: 600px;
-    ;
     background-image: url("../../images/fondoPortadaInicio.png");
-    background-size: cover;
+    background-size: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+  
   }
-
+  
   .titulo1 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     font-family: "Allerta Stencil", sans-serif;
     padding-top: 15%;
   }
-
+  
   .titulo2 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: x-large;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
-
+  
   .btn {
-    width: 50%;
+    width: 20%;
     margin-bottom: 0 px;
     border-radius: 45px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
   }
-
+  
+  .btn:hover {
+    animation: heartBeat;
+    animation-duration: 5s;
+  }
+  
   .bienvenida {
     background-image: url("../../images/bienvenidosnosotros.png");
+    background-size: 100%;
     width: 100%;
     height: 800px;
-    display: inline-flex;
-    text-align: center;
-    justify-content: center;
+    display: flex;
     align-items: center;
     border-color: black;
     border-left: solid 10px;
   }
-
+  
   .container {
-    flex-direction: column;
     display: flex;
-    width: 25%;
-    text-align: center;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    width: 20%;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
   }
-
-  .row {
+  
+  .bienvenida_P {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: large;
+  }
+  
+  .col {
+    background-color: rgb(10, 10, 10);
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+  }
+  
+  .row {
+    width: 60%;
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
   }
-
+  
   p {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
-    width: 80%;
+    width: 100%;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-size: large;
   }
-
+  
+  .letraEstampas {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Lobster', cursive;
+  }
+  
   .muestraRemera {
     width: 60%;
     heigth: 40%;
-
+  
   }
-
+  
   .img-fluid {
     width: 50%;
     height: 50%;
   }
-
+  
   .estampasRemeras {
     width: 100%;
     height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../../images/fondomosaico.svg");
+    background-image: url("../../images/paredinsiders.png");
+    background-size: 100%;
   }
-
+  
   .estampas {
     display: flex;
     flex-direction: column;
@@ -1329,118 +1367,192 @@ img {
     align-items: center;
     width: 60%;
   }
-
+  
   .slide {
-    width: 100%;
+    width: 60%;
   }
-
+  
   .productosVenta {
-    width: 45%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,25%);
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1 rem;
+    width:100%;
     text-align: center;
-
+  
     &__p {
-      text-align: center;
-      color: white;
-      height: 8%;
+      color: rgb(255, 255, 255);
+      text-align: left;
+      width: 40%;
     }
-
+  
     &__tituloproductos {
-      text-align: center;
+   
       color: rgb(255, 255, 255);
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-
+  
     &__precio {
-      text-align: center;
       color: rgb(197, 10, 10);
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
   }
-
+  
+  .producto {
+    
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0.5 em;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+  
+  }
+  
   .productoMuestra {
-    width: 100%;
-    height: 80%;
+  height: 80%;
+  border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
   }
-
+  .productoMuestra:hover {
+    transform: scale(1.5, 1.5);
+    z-index: 100;
+  }
   .botonProducto {
-    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 95%, 20%);
+    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 50%, 15%);
   }
-
+  
   .botonProducto:hover {
     animation: heartBeat;
     animation-duration: 3s;
   }
-
+  
   .contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     background-image: url("../../images/contacto.png");
-    background-size: cover;
+    background-size: 100%;
     height: 600px;
-
+  
     &__titulo {
       color: white;
     }
   }
-
+  
   .contactoWhastapp {
-    width: 40%;
-    height: 10%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-
+    width: 10%;
+    height: 5%;
+    position: relative;
+    justify-content: flex-start;
+  
     &__logocontacto {
-      height: 80%;
-      width: 50%;
+      height: 100%;
+      width: 90%;
     }
-
+  
     &__p {
       color: white;
       font-size: medium;
     }
   }
-
+  
   .detallesProductos {
     width: 100%;
     height: 600px;
     background-image: url("../../images/detalles.png");
-    background-size: cover;
+    background-size: 100%;
+    ;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
   }
-
+  
   .galeria {
     width: 100%;
-    height: 600px;
-    background-image: url("../../images/galeria.png");
-    background-size: cover;
+    background-image: url("../../images/fondonaruto.png");
+    background-size:cover;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
+  
   }
-
+  
   .titulo {
     color: white;
   }
+  
+  .imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1 rem;
+    width: 100%;
+  }
+  
+  .imagen {
+    width: 20%;
+    margin-bottom: 0.5 em;
+    position:relative;
+    display: block;
+    outline: 2px solid #fff;
+    outline-offset: -10px;
+    padding: 5px;
+  }
+  
+  .estampa{
+    background-color: aqua;
+  width:100%;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+   margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+  }
+  .contenedor{
+    background-color: rgb(148, 20, 20);
+    display: flex;
+    flex-direction: row; 
+    width: 20%;
+    align-items: center;
+    margin: 5px;
+     margin-bottom: 0 px;
+      border-radius: 45px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;  
+  }
+  .seleccion {
+    width: 50%;
+  }
+  
 
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
   .grilla {
     display: grid;
-    width: 100%;
-    height: 20%;
+    width: 80%;
+    height: 75%;
     justify-items: center;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 50% 50%;
@@ -1448,24 +1560,24 @@ img {
       "item item item item item"
       "item item item item item";
   }
-
+  
   .caja {
     justify-self: stretch;
   }
-
+  
   .item {
-    width: 90%;
+    width: 95%;
   }
-
+  
   .caja:hover {
     transform: scale(1.5, 1.5);
     z-index: 100;
   }
-
+  
   .detallesRemera {
     display: grid;
-    width: 100%;
-    height: 85%;
+    width: 80%;
+    height: 35%;
     justify-items: center;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 16% 21% 21% 21% 21%;
@@ -1476,7 +1588,7 @@ img {
       "detalles detalles detalles detalles"
       "detalles detalles detalles detalles";
   }
-
+  
   .titulos {
     display: flex;
     flex-direction: column;
@@ -1485,7 +1597,7 @@ img {
     text-align: center;
     background-color: rgb(196, 41, 41);
   }
-
+  
   .detalles {
     display: flex;
     flex-direction: column;
@@ -1494,20 +1606,15 @@ img {
     text-align: center;
     background-color: rgb(255, 255, 255);
   }
-
+  
   .titulo_item {
     text-align: center;
-    font-size: x-small;
+    font-size: medium;
   }
-
-  .contenido {
-    text-align: center;
-    font-size: x-small;
-  }
-
+  
   .nosotros {
     background-image: url("../../images/conocenos.png");
-    background-size: cover;
+    background-size: 100%;
     height: 600px;
     width: 100%;
     display: flex;
@@ -1515,7 +1622,7 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-
+  
     &__titulo {
       color: rgb(255, 255, 255);
       text-align: center;
@@ -1523,30 +1630,30 @@ img {
       font-family: "Allerta Stencil", sans-serif;
     }
   }
-
+  
   .video {
-    width: 100%;
+    width: 70%;
   }
-
+  
   .marca {
     background-image: url("../../images/conocenosmarca.png");
-    background-size: cover;
+    background-size: 100%;
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
     padding-right: 10%;
     width: 100%;
     height: 600px;
     border-left: solid 10px;
-
+  
   }
-
+  
   .logoMarca {
     height: 20%;
     width: 20%;
     margin-right: 0%;
   }
-
+  
   .p__nosotros {
     margin-bottom: 0 px;
     border-radius: 45px;
@@ -1554,76 +1661,75 @@ img {
     -webkit-border-radius: 10px;
     display: flex;
     text-align: center;
-    width: 70%;
-    height: 30%;
+    align-items: center;
+    width: 45%;
+    height: 40%;
     padding-left: 0%;
     color: rgb(0, 0, 0);
-    font-family: Georgia, Times;
+    font-family: 'Architects Daughter', cursive;
     font-weight: 200;
     font-size: large;
   }
-
+  
   .footer {
     display: flex;
     background-image: linear-gradient(to left, crimson, black);
     height: 15%;
     width: 100%;
-
+  
     &__contenedor {
       display: grid;
       width: 100%;
       height: 75%;
       justify-items: center;
-      align-content: center;
       grid-template-columns: 30% 30% 40%;
       grid-template-rows: 100%;
       grid-template-areas: "seguinos pago nav";
-
+  
       &__seguinos {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         height: 100%;
-
+  
         &__p {
           text-align: left;
-          font-size: 70%;
+          font-size: 100%;
           width: 100%;
           color: white;
         }
-
+  
         &__logoinstagram {
-          height: 50%;
-          width: 30%;
+          height: 75%;
+          width: 10%;
           position: relative;
-          left: 30%;
-          bottom: 15%;
+          left: 15%;
+          top: 15%;
         }
-
+  
         &__logofacebook {
-          height: 50%;
-          width: 30%;
-          left: 30%;
-          bottom: 15%;
+          height: 75%;
+          width: 8%;
+          left: 15%;
           position: relative;
+          top: 15%;
         }
       }
-
+  
       &__pago {
         display: flex;
         justify-content: center;
         width: 100%;
         height: 100%;
-
+  
         &__mediodepago {
           color: white;
-          padding-top: 7%;
-          font-size: 70%;
+          font: 0.2 em;
           list-style: none;
           text-decoration: none;
         }
       }
-
+  
       &__nav {
         display: flex;
         align-items: center;
@@ -1631,7 +1737,7 @@ img {
         flex-wrap: wrap;
         width: 100%;
         height: 30%;
-
+  
         & nav ul li a {
           width: 80%;
           height: 40%;
@@ -1640,4 +1746,5 @@ img {
       }
     }
   }
+  
 }

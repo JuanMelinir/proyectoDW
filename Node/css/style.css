@@ -396,7 +396,7 @@ p {
 
 .muestraRemera {
   width: 60%;
-  heigth: 40%; }
+  height: 40%; }
 
 .img-fluid {
   width: 50%;
@@ -426,7 +426,8 @@ p {
   flex-wrap: wrap;
   gap: 1 rem;
   width: 95%;
-  text-align: center; }
+  text-align: center;
+  margin: 25PX; }
   .productosVenta__p {
     color: white;
     text-align: left;
@@ -598,13 +599,9 @@ img {
   z-index: 100; }
 
 .detallesRemera {
-  display: grid;
-  width: 80%;
-  height: 35%;
+  width: 60%;
   justify-items: center;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 16% 21% 21% 21% 21%;
-  grid-template-areas: "titulo    titulo    titulo   titulo" "detalles detalles detalles detalles" "detalles detalles detalles detalles" "detalles detalles detalles detalles" "detalles detalles detalles detalles"; }
+  margin: 25px; }
 
 .titulos {
   display: flex;
@@ -620,7 +617,12 @@ img {
   justify-self: stretch;
   justify-content: center;
   text-align: center;
-  background-color: white; }
+  background-color: white;
+  margin: 5px;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
 
 .titulo_item {
   text-align: center;
@@ -701,14 +703,14 @@ img {
         width: 100%;
         color: white; }
       .footer__contenedor__seguinos__logoinstagram {
-        height: 75%;
-        width: 10%;
+        height: 60%;
+        width: 6%;
         position: relative;
         left: 15%;
         top: 15%; }
       .footer__contenedor__seguinos__logofacebook {
-        height: 75%;
-        width: 8%;
+        height: 60%;
+        width: 6%;
         left: 15%;
         position: relative;
         top: 15%; }
@@ -783,9 +785,9 @@ img {
   li a:visited {
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    margin-left: 10px;
+    margin-left: 0px;
     margin-right: 50px;
-    color: #7e7575; }
+    color: white; }
   ul ul {
     position: absolute;
     display: none; }
@@ -793,8 +795,8 @@ img {
     display: block; }
   ul li:hover ul {
     display: block;
-    padding-left: 0%;
-    background-color: #970e0e; }
+    padding-right: 15%;
+    background-color: #a70808; }
   .sublista {
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -822,14 +824,23 @@ img {
     font-size: xx-large;
     font-family: "Allerta Stencil"; }
   .h2 {
-    color: black;
+    color: white;
     text-align: center;
     font-size: xx-large;
-    font-family: Verdana; }
+    font-family: 'Lobster', cursive; }
+  .detallesCarosuel {
+    color: white;
+    text-align: center;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
   h5 {
     color: black;
     text-align: center;
-    font-size: 25%;
+    font-size: medium;
     font-family: "Allerta Stencil"; }
   .display-4 {
     padding-top: 10%; }
@@ -859,8 +870,6 @@ img {
   #scroll {
     position: relative;
     top: 30%; }
-  .seleccion {
-    width: 80%; }
   .btnFormulario {
     color: white;
     background-color: crimson;
@@ -901,13 +910,13 @@ img {
     width: 100%;
     height: 600px; }
   .misproductos {
-    width: 100%;
-    height: 600px;
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../../images/productos.png"); }
+    background-image: url("../../images/astronautainsiders.png");
+    background-size: cover; }
   video {
     width: 90%;
     height: 70%;
@@ -959,8 +968,8 @@ img {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 95%;
-    height: 75%; }
+    width: 30%;
+    height: 70%; }
   .botones {
     display: flex;
     align-items: center;
@@ -971,8 +980,8 @@ img {
     color: white;
     background-color: crimson;
     border-color: crimson;
-    width: 30%;
-    height: 50%;
+    width: 10%;
+    height: 70%;
     margin-bottom: 0 px;
     border-radius: 45px;
     -moz-border-radius: 10px;
@@ -984,58 +993,84 @@ img {
     width: 100%;
     height: 600px;
     background-image: url("../../images/fondoPortadaInicio.png");
-    background-size: cover;
+    background-size: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
   .titulo1 {
-    color: white;
+    color: black;
     text-align: center;
     font-family: "Allerta Stencil", sans-serif;
     padding-top: 15%; }
   .titulo2 {
-    color: white;
+    color: black;
     text-align: center;
     font-size: x-large;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
   .btn {
-    width: 50%;
+    width: 20%;
     margin-bottom: 0 px;
     border-radius: 45px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px; }
+  .btn:hover {
+    animation: heartBeat;
+    animation-duration: 5s; }
   .bienvenida {
     background-image: url("../../images/bienvenidosnosotros.png");
+    background-size: 100%;
     width: 100%;
     height: 800px;
-    display: inline-flex;
-    text-align: center;
-    justify-content: center;
+    display: flex;
     align-items: center;
     border-color: black;
     border-left: solid 10px; }
   .container {
-    flex-direction: column;
     display: flex;
-    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  .bienvenida_P {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    justify-content: center;
-    align-items: center; }
-  .row {
     width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: large; }
+  .col {
+    background-color: #0a0a0a;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  .row {
+    width: 60%;
     text-align: center;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
   p {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
-    width: 80%;
+    width: 100%;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-size: large; }
+  .letraEstampas {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Lobster', cursive; }
   .muestraRemera {
     width: 60%;
     heigth: 40%; }
@@ -1048,7 +1083,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../../images/fondomosaico.svg"); }
+    background-image: url("../../images/paredinsiders.png");
+    background-size: 100%; }
   .estampas {
     display: flex;
     flex-direction: column;
@@ -1056,36 +1092,50 @@ img {
     align-items: center;
     width: 60%; }
   .slide {
-    width: 100%; }
+    width: 60%; }
   .productosVenta {
-    width: 45%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 25%);
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1 rem;
+    width: 100%;
     text-align: center; }
     .productosVenta__p {
-      text-align: center;
       color: white;
-      height: 8%; }
+      text-align: left;
+      width: 40%; }
     .productosVenta__tituloproductos {
-      text-align: center;
       color: white;
       font-family: Verdana, Geneva, Tahoma, sans-serif; }
     .productosVenta__precio {
-      text-align: center;
       color: #c50a0a;
       font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .producto {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0.5 em;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
   .productoMuestra {
-    width: 100%;
-    height: 80%; }
+    height: 80%;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  .productoMuestra:hover {
+    transform: scale(1.5, 1.5);
+    z-index: 100; }
   .botonProducto {
     color: white;
     background-color: crimson;
     border-color: crimson;
-    width: 95%;
-    height: 20%;
+    width: 50%;
+    height: 15%;
     margin-bottom: 0 px;
     border-radius: 45px;
     -moz-border-radius: 10px;
@@ -1099,20 +1149,21 @@ img {
     align-items: center;
     align-content: center;
     background-image: url("../../images/contacto.png");
-    background-size: cover;
+    background-size: 100%;
     height: 600px; }
     .contacto__titulo {
       color: white; }
   .contactoWhastapp {
-    width: 40%;
-    height: 10%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center; }
+    width: 10%;
+    height: 5%;
+    position: relative;
+    justify-content: flex-start; }
     .contactoWhastapp__logocontacto {
-      height: 80%;
-      width: 50%; }
+      height: 100%;
+      width: 90%; }
     .contactoWhastapp__p {
       color: white;
       font-size: medium; }
@@ -1120,7 +1171,7 @@ img {
     width: 100%;
     height: 600px;
     background-image: url("../../images/detalles.png");
-    background-size: cover;
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -1128,8 +1179,7 @@ img {
     align-items: center; }
   .galeria {
     width: 100%;
-    height: 600px;
-    background-image: url("../../images/galeria.png");
+    background-image: url("../../images/fondonaruto.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -1138,10 +1188,51 @@ img {
     align-items: center; }
   .titulo {
     color: white; }
+  .imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1 rem;
+    width: 100%; }
+  .imagen {
+    width: 20%;
+    margin-bottom: 0.5 em;
+    position: relative;
+    display: block;
+    outline: 2px solid #fff;
+    outline-offset: -10px;
+    padding: 5px; }
+  .estampa {
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  .contenedor {
+    background-color: #941414;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    align-items: center;
+    margin: 5px;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  .seleccion {
+    width: 50%; }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
   .grilla {
     display: grid;
-    width: 100%;
-    height: 20%;
+    width: 80%;
+    height: 75%;
     justify-items: center;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 50% 50%;
@@ -1149,14 +1240,14 @@ img {
   .caja {
     justify-self: stretch; }
   .item {
-    width: 90%; }
+    width: 95%; }
   .caja:hover {
     transform: scale(1.5, 1.5);
     z-index: 100; }
   .detallesRemera {
     display: grid;
-    width: 100%;
-    height: 85%;
+    width: 80%;
+    height: 35%;
     justify-items: center;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 16% 21% 21% 21% 21%;
@@ -1177,13 +1268,10 @@ img {
     background-color: white; }
   .titulo_item {
     text-align: center;
-    font-size: x-small; }
-  .contenido {
-    text-align: center;
-    font-size: x-small; }
+    font-size: medium; }
   .nosotros {
     background-image: url("../../images/conocenos.png");
-    background-size: cover;
+    background-size: 100%;
     height: 600px;
     width: 100%;
     display: flex;
@@ -1197,13 +1285,13 @@ img {
       font-size: xx-large;
       font-family: "Allerta Stencil", sans-serif; }
   .video {
-    width: 100%; }
+    width: 70%; }
   .marca {
     background-image: url("../../images/conocenosmarca.png");
-    background-size: cover;
+    background-size: 100%;
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
     padding-right: 10%;
     width: 100%;
     height: 600px;
@@ -1219,11 +1307,12 @@ img {
     -webkit-border-radius: 10px;
     display: flex;
     text-align: center;
-    width: 70%;
-    height: 30%;
+    align-items: center;
+    width: 45%;
+    height: 40%;
     padding-left: 0%;
     color: black;
-    font-family: Georgia, Times;
+    font-family: 'Architects Daughter', cursive;
     font-weight: 200;
     font-size: large; }
   .footer {
@@ -1236,7 +1325,6 @@ img {
       width: 100%;
       height: 75%;
       justify-items: center;
-      align-content: center;
       grid-template-columns: 30% 30% 40%;
       grid-template-rows: 100%;
       grid-template-areas: "seguinos pago nav"; }
@@ -1247,21 +1335,21 @@ img {
         height: 100%; }
         .footer__contenedor__seguinos__p {
           text-align: left;
-          font-size: 70%;
+          font-size: 100%;
           width: 100%;
           color: white; }
         .footer__contenedor__seguinos__logoinstagram {
-          height: 50%;
-          width: 30%;
+          height: 75%;
+          width: 10%;
           position: relative;
-          left: 30%;
-          bottom: 15%; }
+          left: 15%;
+          top: 15%; }
         .footer__contenedor__seguinos__logofacebook {
-          height: 50%;
-          width: 30%;
-          left: 30%;
-          bottom: 15%;
-          position: relative; }
+          height: 75%;
+          width: 8%;
+          left: 15%;
+          position: relative;
+          top: 15%; }
       .footer__contenedor__pago {
         display: flex;
         justify-content: center;
@@ -1269,8 +1357,7 @@ img {
         height: 100%; }
         .footer__contenedor__pago__mediodepago {
           color: white;
-          padding-top: 7%;
-          font-size: 70%;
+          font: 0.2 em;
           list-style: none;
           text-decoration: none; }
       .footer__contenedor__nav {
