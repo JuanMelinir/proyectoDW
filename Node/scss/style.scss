@@ -210,12 +210,13 @@ h4 {
 }
 
 
-@mixin btnAtributos($color, $bgcolor, $brcolor, $width, $heigth) {
+@mixin btnAtributos($color, $bgcolor, $brcolor, $width, $heigth,$font) {
   color: $color;
   background-color: $bgcolor;
   border-color: $brcolor;
   width: $width;
   height: $heigth;
+  font-size: $font;
   margin-bottom: 0 px;
   border-radius: 45px;
   -moz-border-radius: 10px;
@@ -223,7 +224,7 @@ h4 {
 }
 
 .btnFormulario {
-  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 100%);
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 100%,medium);
 }
 
 .btnFormulario:hover {
@@ -232,18 +233,24 @@ h4 {
 }
 
 .enviar {
-  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 6%, 4%);
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 6%, 4,medium);
 }
 
 .hacerPedido {
-  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 5%);
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 5%,medium);
 }
 
 .hacerPedido:hover {
   animation: heartBeat;
   animation-duration: 5s;
 }
-
+.verProductos{
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 15%, 5%,medium);  
+}
+.verProductos:hover {
+  animation: heartBeat;
+  animation-duration: 5s;
+}
 .seccion {
   width: 100%;
   height: 600px;
@@ -347,7 +354,7 @@ video {
 }
 
 .btnFormulario {
-  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 70%);
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 70%,medium);
 }
 
 textarea {
@@ -492,7 +499,24 @@ p {
 .slide {
   width: 60%;
 }
-
+.infoPago{
+  @extend .seccion;
+  background-color: #00aff0;
+  background-size: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.infoMercadopago{
+background-color: #fff;
+width:70%;
+height:40%; 
+border-radius: 45px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px; 
+}
 .productosVenta {
   display: grid;
   grid-template-columns: repeat(4,25%);
@@ -546,7 +570,7 @@ border-radius: 45px;
   z-index: 100;
 }
 .botonProducto {
-  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 50%, 15%);
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 50%, 15%,medium);
 }
 
 .botonProducto:hover {
@@ -602,7 +626,7 @@ border-radius: 45px;
 
 .galeria {
   width: 100%;
-  background-image: url("../../images/fondonaruto.png");
+  background-image: url("../../images/galeria.jpg");
   background-size:cover;
   display: flex;
   flex-direction: column;
@@ -613,7 +637,7 @@ border-radius: 45px;
 }
 
 .titulo {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .imagenes {
@@ -1024,12 +1048,8 @@ img {
   .detallesCarosuel {
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: medium;
+    font-size: xx-small;
     font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 0 px;
-    border-radius: 45px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
   }
   
   h5 {
@@ -1087,12 +1107,13 @@ img {
   }
   
   
-  @mixin btnAtributos($color, $bgcolor, $brcolor, $width, $heigth) {
+  @mixin btnAtributos($color, $bgcolor, $brcolor, $width, $heigth,$font) {
     color: $color;
     background-color: $bgcolor;
     border-color: $brcolor;
     width: $width;
     height: $heigth;
+    font-size: $font;
     margin-bottom: 0 px;
     border-radius: 45px;
     -moz-border-radius: 10px;
@@ -1100,7 +1121,7 @@ img {
   }
   
   .btnFormulario {
-    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 100%);
+    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 100%,medium);
   }
   
   .btnFormulario:hover {
@@ -1109,18 +1130,24 @@ img {
   }
   
   .enviar {
-    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 6%, 4%);
+    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 6%, 4%,medium);
   }
   
   .hacerPedido {
-    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 5%);
+    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 5%,x-small);
   }
   
   .hacerPedido:hover {
     animation: heartBeat;
     animation-duration: 5s;
   }
-  
+  .verProductos{
+    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 50%, 5%,small);  
+  }
+  .verProductos:hover {
+    animation: heartBeat;
+    animation-duration: 5s;
+  }
   .seccion {
     width: 100%;
     height: 600px;
@@ -1137,7 +1164,7 @@ img {
   }
   
   video {
-    width: 90%;
+    width: 100%;
     height: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -1210,7 +1237,7 @@ img {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 30%;
+    width: 95%;
     height: 70%;
   }
   
@@ -1220,11 +1247,11 @@ img {
     justify-content: center;
     width: 100%;
     height: 10%;
-  
   }
   
   .btnFormulario {
-    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 70%);
+    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 30%, 50%,medium);
+    margin:2px;
   }
   
   textarea {
@@ -1236,7 +1263,7 @@ img {
     width: 100%;
     height: 600px;
     background-image: url("../../images/fondoPortadaInicio.png");
-    background-size: 100%;
+    background-size: cover;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -1274,7 +1301,7 @@ img {
   
   .bienvenida {
     background-image: url("../../images/bienvenidosnosotros.png");
-    background-size: 100%;
+    background-size: cover;
     width: 100%;
     height: 800px;
     display: flex;
@@ -1335,7 +1362,7 @@ img {
   .letraEstampas {
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: xx-large;
+    font-size: small;
     font-family: 'Lobster', cursive;
   }
   
@@ -1357,7 +1384,7 @@ img {
     justify-content: center;
     align-items: center;
     background-image: url("../../images/paredinsiders.png");
-    background-size: 100%;
+    background-size: cover;
   }
   
   .estampas {
@@ -1369,12 +1396,12 @@ img {
   }
   
   .slide {
-    width: 60%;
+    width: 100%;
   }
-  
+
   .productosVenta {
     display: grid;
-    grid-template-columns: repeat(2,25%);
+    grid-template-columns: repeat(2,50%);
     align-items: center;
     flex-wrap: wrap;
     gap: 1 rem;
@@ -1383,8 +1410,8 @@ img {
   
     &__p {
       color: rgb(255, 255, 255);
-      text-align: left;
-      width: 40%;
+      font-size: small;
+
     }
   
     &__tituloproductos {
@@ -1425,7 +1452,7 @@ img {
     z-index: 100;
   }
   .botonProducto {
-    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 50%, 15%);
+    @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 50%, 15%,x-small);
   }
   
   .botonProducto:hover {
@@ -1439,7 +1466,7 @@ img {
     align-items: center;
     align-content: center;
     background-image: url("../../images/contacto.png");
-    background-size: 100%;
+    background-size: cover;
     height: 600px;
   
     &__titulo {
@@ -1451,19 +1478,21 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 10%;
-    height: 5%;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
     position: relative;
-    justify-content: flex-start;
   
     &__logocontacto {
-      height: 100%;
-      width: 90%;
+      height: 54%;
+      width: 10%;
     }
   
     &__p {
       color: white;
-      font-size: medium;
+      font-size: small;
+      width:28%;
+      height:10%;
     }
   }
   
@@ -1471,7 +1500,7 @@ img {
     width: 100%;
     height: 600px;
     background-image: url("../../images/detalles.png");
-    background-size: 100%;
+    background-size: cover;
     ;
     display: flex;
     flex-direction: column;
@@ -1482,7 +1511,7 @@ img {
   
   .galeria {
     width: 100%;
-    background-image: url("../../images/fondonaruto.png");
+    background-image: url("../../images/galeria.jpg");
     background-size:cover;
     display: flex;
     flex-direction: column;
@@ -1493,7 +1522,7 @@ img {
   }
   
   .titulo {
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   .imagenes {
@@ -1514,41 +1543,29 @@ img {
   }
   
   .estampa{
-    background-color: aqua;
-  width:100%;
   display: flex;
-  flex-direction: row; 
-  align-items: center;
-  justify-content: center;
-   margin-bottom: 0 px;
-    border-radius: 45px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
+  width:100%;
+  height: 40%;
+  align-content: center;
+  justify-self: stretch;
   }
   .contenedor{
     background-color: rgb(148, 20, 20);
-    display: flex;
-    flex-direction: row; 
-    width: 20%;
-    align-items: center;
-    margin: 5px;
-     margin-bottom: 0 px;
-      border-radius: 45px;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;  
+    display: block;
+    align-content: center;
+    width: 100%;
+
   }
   .seleccion {
-    width: 50%;
+    width: 100%;
   }
-  
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  
-  
+    
   .grilla {
     display: grid;
     width: 80%;
@@ -1573,22 +1590,7 @@ img {
     transform: scale(1.5, 1.5);
     z-index: 100;
   }
-  
-  .detallesRemera {
-    display: grid;
-    width: 80%;
-    height: 35%;
-    justify-items: center;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 16% 21% 21% 21% 21%;
-    grid-template-areas:
-      "titulo    titulo    titulo   titulo"
-      "detalles detalles detalles detalles"
-      "detalles detalles detalles detalles"
-      "detalles detalles detalles detalles"
-      "detalles detalles detalles detalles";
-  }
-  
+
   .titulos {
     display: flex;
     flex-direction: column;
@@ -1601,11 +1603,16 @@ img {
   .detalles {
     display: flex;
     flex-direction: column;
+    width: 100%;
     justify-self: stretch;
     justify-content: center;
     text-align: center;
-    background-color: rgb(255, 255, 255);
   }
+  .detalles:hover{
+    transform: scale(1.5, 1.5);
+    z-index: 100;  
+  }
+
   
   .titulo_item {
     text-align: center;
@@ -1614,7 +1621,7 @@ img {
   
   .nosotros {
     background-image: url("../../images/conocenos.png");
-    background-size: 100%;
+    background-size: cover;
     height: 600px;
     width: 100%;
     display: flex;
@@ -1637,7 +1644,7 @@ img {
   
   .marca {
     background-image: url("../../images/conocenosmarca.png");
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -1662,13 +1669,12 @@ img {
     display: flex;
     text-align: center;
     align-items: center;
-    width: 45%;
+    width: 100%;
     height: 40%;
-    padding-left: 0%;
     color: rgb(0, 0, 0);
     font-family: 'Architects Daughter', cursive;
     font-weight: 200;
-    font-size: large;
+    font-size: medium;
   }
   
   .footer {
@@ -1700,17 +1706,17 @@ img {
         }
   
         &__logoinstagram {
-          height: 75%;
-          width: 10%;
+          height: 20%;
+          width: 20%;
           position: relative;
           left: 15%;
           top: 15%;
         }
   
         &__logofacebook {
-          height: 75%;
-          width: 8%;
-          left: 15%;
+          height: 20%;
+          width: 20%;
+          left: 20%;
           position: relative;
           top: 15%;
         }

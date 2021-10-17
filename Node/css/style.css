@@ -168,6 +168,7 @@ h4 {
   border-color: crimson;
   width: 10%;
   height: 100%;
+  font-size: medium;
   margin-bottom: 0 px;
   border-radius: 45px;
   -moz-border-radius: 10px;
@@ -182,7 +183,8 @@ h4 {
   background-color: crimson;
   border-color: crimson;
   width: 6%;
-  height: 4%;
+  height: 4;
+  font-size: medium;
   margin-bottom: 0 px;
   border-radius: 45px;
   -moz-border-radius: 10px;
@@ -194,6 +196,7 @@ h4 {
   border-color: crimson;
   width: 10%;
   height: 5%;
+  font-size: medium;
   margin-bottom: 0 px;
   border-radius: 45px;
   -moz-border-radius: 10px;
@@ -203,7 +206,23 @@ h4 {
   animation: heartBeat;
   animation-duration: 5s; }
 
-.seccion, .inicio, .estampasRemeras, .detallesProductos {
+.verProductos {
+  color: white;
+  background-color: crimson;
+  border-color: crimson;
+  width: 15%;
+  height: 5%;
+  font-size: medium;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
+
+.verProductos:hover {
+  animation: heartBeat;
+  animation-duration: 5s; }
+
+.seccion, .inicio, .estampasRemeras, .infoPago, .detallesProductos {
   width: 100%;
   height: 600px; }
 
@@ -293,6 +312,7 @@ video {
   border-color: crimson;
   width: 10%;
   height: 70%;
+  font-size: medium;
   margin-bottom: 0 px;
   border-radius: 45px;
   -moz-border-radius: 10px;
@@ -419,6 +439,23 @@ p {
 .slide {
   width: 60%; }
 
+.infoPago {
+  background-color: #00aff0;
+  background-size: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.infoMercadopago {
+  background-color: #fff;
+  width: 70%;
+  height: 40%;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
+
 .productosVenta {
   display: grid;
   grid-template-columns: repeat(4, 25%);
@@ -467,6 +504,7 @@ p {
   border-color: crimson;
   width: 50%;
   height: 15%;
+  font-size: medium;
   margin-bottom: 0 px;
   border-radius: 45px;
   -moz-border-radius: 10px;
@@ -513,7 +551,7 @@ p {
 
 .galeria {
   width: 100%;
-  background-image: url("../../images/fondonaruto.png");
+  background-image: url("../../images/galeria.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -522,7 +560,7 @@ p {
   align-items: center; }
 
 .titulo {
-  color: white; }
+  color: black; }
 
 .imagenes {
   display: flex;
@@ -831,12 +869,8 @@ img {
   .detallesCarosuel {
     color: white;
     text-align: center;
-    font-size: medium;
-    font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 0 px;
-    border-radius: 45px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px; }
+    font-size: xx-small;
+    font-family: 'Courier New', Courier, monospace; }
   h5 {
     color: black;
     text-align: center;
@@ -876,6 +910,7 @@ img {
     border-color: crimson;
     width: 10%;
     height: 100%;
+    font-size: medium;
     margin-bottom: 0 px;
     border-radius: 45px;
     -moz-border-radius: 10px;
@@ -889,6 +924,7 @@ img {
     border-color: crimson;
     width: 6%;
     height: 4%;
+    font-size: medium;
     margin-bottom: 0 px;
     border-radius: 45px;
     -moz-border-radius: 10px;
@@ -899,6 +935,7 @@ img {
     border-color: crimson;
     width: 10%;
     height: 5%;
+    font-size: x-small;
     margin-bottom: 0 px;
     border-radius: 45px;
     -moz-border-radius: 10px;
@@ -906,7 +943,21 @@ img {
   .hacerPedido:hover {
     animation: heartBeat;
     animation-duration: 5s; }
-  .seccion, .inicio, .estampasRemeras, .detallesProductos {
+  .verProductos {
+    color: white;
+    background-color: crimson;
+    border-color: crimson;
+    width: 50%;
+    height: 5%;
+    font-size: small;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  .verProductos:hover {
+    animation: heartBeat;
+    animation-duration: 5s; }
+  .seccion, .inicio, .estampasRemeras, .infoPago, .detallesProductos {
     width: 100%;
     height: 600px; }
   .misproductos {
@@ -918,7 +969,7 @@ img {
     background-image: url("../../images/astronautainsiders.png");
     background-size: cover; }
   video {
-    width: 90%;
+    width: 100%;
     height: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -968,7 +1019,7 @@ img {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 30%;
+    width: 95%;
     height: 70%; }
   .botones {
     display: flex;
@@ -980,12 +1031,14 @@ img {
     color: white;
     background-color: crimson;
     border-color: crimson;
-    width: 10%;
-    height: 70%;
+    width: 30%;
+    height: 50%;
+    font-size: medium;
     margin-bottom: 0 px;
     border-radius: 45px;
     -moz-border-radius: 10px;
-    -webkit-border-radius: 10px; }
+    -webkit-border-radius: 10px;
+    margin: 2px; }
   textarea {
     height: 50%;
     width: 75%; }
@@ -993,7 +1046,7 @@ img {
     width: 100%;
     height: 600px;
     background-image: url("../../images/fondoPortadaInicio.png");
-    background-size: 100%;
+    background-size: cover;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -1020,7 +1073,7 @@ img {
     animation-duration: 5s; }
   .bienvenida {
     background-image: url("../../images/bienvenidosnosotros.png");
-    background-size: 100%;
+    background-size: cover;
     width: 100%;
     height: 800px;
     display: flex;
@@ -1069,7 +1122,7 @@ img {
   .letraEstampas {
     color: white;
     text-align: center;
-    font-size: xx-large;
+    font-size: small;
     font-family: 'Lobster', cursive; }
   .muestraRemera {
     width: 60%;
@@ -1084,7 +1137,7 @@ img {
     justify-content: center;
     align-items: center;
     background-image: url("../../images/paredinsiders.png");
-    background-size: 100%; }
+    background-size: cover; }
   .estampas {
     display: flex;
     flex-direction: column;
@@ -1092,10 +1145,10 @@ img {
     align-items: center;
     width: 60%; }
   .slide {
-    width: 60%; }
+    width: 100%; }
   .productosVenta {
     display: grid;
-    grid-template-columns: repeat(2, 25%);
+    grid-template-columns: repeat(2, 50%);
     align-items: center;
     flex-wrap: wrap;
     gap: 1 rem;
@@ -1103,8 +1156,7 @@ img {
     text-align: center; }
     .productosVenta__p {
       color: white;
-      text-align: left;
-      width: 40%; }
+      font-size: small; }
     .productosVenta__tituloproductos {
       color: white;
       font-family: Verdana, Geneva, Tahoma, sans-serif; }
@@ -1136,6 +1188,7 @@ img {
     border-color: crimson;
     width: 50%;
     height: 15%;
+    font-size: x-small;
     margin-bottom: 0 px;
     border-radius: 45px;
     -moz-border-radius: 10px;
@@ -1149,7 +1202,7 @@ img {
     align-items: center;
     align-content: center;
     background-image: url("../../images/contacto.png");
-    background-size: 100%;
+    background-size: cover;
     height: 600px; }
     .contacto__titulo {
       color: white; }
@@ -1157,21 +1210,23 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 10%;
-    height: 5%;
-    position: relative;
-    justify-content: flex-start; }
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    position: relative; }
     .contactoWhastapp__logocontacto {
-      height: 100%;
-      width: 90%; }
+      height: 54%;
+      width: 10%; }
     .contactoWhastapp__p {
       color: white;
-      font-size: medium; }
+      font-size: small;
+      width: 28%;
+      height: 10%; }
   .detallesProductos {
     width: 100%;
     height: 600px;
     background-image: url("../../images/detalles.png");
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -1179,7 +1234,7 @@ img {
     align-items: center; }
   .galeria {
     width: 100%;
-    background-image: url("../../images/fondonaruto.png");
+    background-image: url("../../images/galeria.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -1187,7 +1242,7 @@ img {
     justify-content: center;
     align-items: center; }
   .titulo {
-    color: white; }
+    color: black; }
   .imagenes {
     display: flex;
     flex-wrap: wrap;
@@ -1202,29 +1257,18 @@ img {
     outline-offset: -10px;
     padding: 5px; }
   .estampa {
-    background-color: aqua;
-    width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0 px;
-    border-radius: 45px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px; }
+    width: 100%;
+    height: 40%;
+    align-content: center;
+    justify-self: stretch; }
   .contenedor {
     background-color: #941414;
-    display: flex;
-    flex-direction: row;
-    width: 20%;
-    align-items: center;
-    margin: 5px;
-    margin-bottom: 0 px;
-    border-radius: 45px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px; }
+    display: block;
+    align-content: center;
+    width: 100%; }
   .seleccion {
-    width: 50%; }
+    width: 100%; }
   img {
     width: 100%;
     height: 100%;
@@ -1244,14 +1288,6 @@ img {
   .caja:hover {
     transform: scale(1.5, 1.5);
     z-index: 100; }
-  .detallesRemera {
-    display: grid;
-    width: 80%;
-    height: 35%;
-    justify-items: center;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 16% 21% 21% 21% 21%;
-    grid-template-areas: "titulo    titulo    titulo   titulo" "detalles detalles detalles detalles" "detalles detalles detalles detalles" "detalles detalles detalles detalles" "detalles detalles detalles detalles"; }
   .titulos {
     display: flex;
     flex-direction: column;
@@ -1262,16 +1298,19 @@ img {
   .detalles {
     display: flex;
     flex-direction: column;
+    width: 100%;
     justify-self: stretch;
     justify-content: center;
-    text-align: center;
-    background-color: white; }
+    text-align: center; }
+  .detalles:hover {
+    transform: scale(1.5, 1.5);
+    z-index: 100; }
   .titulo_item {
     text-align: center;
     font-size: medium; }
   .nosotros {
     background-image: url("../../images/conocenos.png");
-    background-size: 100%;
+    background-size: cover;
     height: 600px;
     width: 100%;
     display: flex;
@@ -1288,7 +1327,7 @@ img {
     width: 70%; }
   .marca {
     background-image: url("../../images/conocenosmarca.png");
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -1308,13 +1347,12 @@ img {
     display: flex;
     text-align: center;
     align-items: center;
-    width: 45%;
+    width: 100%;
     height: 40%;
-    padding-left: 0%;
     color: black;
     font-family: 'Architects Daughter', cursive;
     font-weight: 200;
-    font-size: large; }
+    font-size: medium; }
   .footer {
     display: flex;
     background-image: linear-gradient(to left, crimson, black);
@@ -1339,15 +1377,15 @@ img {
           width: 100%;
           color: white; }
         .footer__contenedor__seguinos__logoinstagram {
-          height: 75%;
-          width: 10%;
+          height: 20%;
+          width: 20%;
           position: relative;
           left: 15%;
           top: 15%; }
         .footer__contenedor__seguinos__logofacebook {
-          height: 75%;
-          width: 8%;
-          left: 15%;
+          height: 20%;
+          width: 20%;
+          left: 20%;
           position: relative;
           top: 15%; }
       .footer__contenedor__pago {
