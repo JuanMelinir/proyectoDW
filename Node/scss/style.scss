@@ -1,8 +1,11 @@
+
+/* se encuentran en todas las hojas del proyecto */
+/*cuerpo de la hoja*/
 body {
   display: flex;
   flex-direction: column;
 }
-
+/* encabezado de cada hoja*/
 header {
   display: flex;
   width: 100%;
@@ -10,45 +13,20 @@ header {
   align-items: center;
   padding-left: 3%;
 }
-
-.slider {
-  display: flex;
-  align-items: center;
-  top: 7%;
-  width: 30%;
-  height: 30%;
-}
-
-.itemMuestra {
-  height: 60%;
-  width: 60%;
-}
-
+/* contenedor de las distintas etiquetas para navegar */
 .navbar {
   width: 100%;
 }
-
+/* el navbar al usarse el responsive se contrae a la izquierda*/
 .collapse {
   justify-content: right;
 }
-
-a {
-  color: white;
-  list-style: none;
-  text-decoration: none;
-}
-
-.pedido {
-  color: white;
-  list-style: none;
-  text-decoration: none;
-}
-
+/* lista usada en el navbar */
 ul {
   list-style: none;
   font-size: 0;
 }
-
+/* elemento de la lista */
 li {
   display: inline-block;
   font-size: 14px;
@@ -56,7 +34,7 @@ li {
   text-align: inline;
   text-decoration: none;
 }
-
+/*link en la lista*/
 li a {
   text-decoration: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -65,7 +43,7 @@ li a {
   margin-right: 50px;
   color: rgb(0, 0, 0);
 }
-
+/* cuando un link es visitado no aparece subrayado y es de color blanco*/
 li a:visited {
   text-decoration: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -74,43 +52,29 @@ li a:visited {
   margin-right: 50px;
   color: rgb(255, 255, 255);
 }
-
+/* lista en la lista, sería la lista del navbar que tiene la lista en galería */
+/* que a su vez tiene los elementos remeras y gorras */
 ul ul {
   position: absolute;
   display: none;
 }
-
+/* elemento de la lista, es decir remera y gorra */
 ul ul li {
   display: block;
 }
-
+/* al posicionar el mouse sobre el elemento galería en el navbar se desplega las opciones remeras y gorras con fondo rojo*/
 ul li:hover ul {
   display: block;
   padding-right: 15%;
   background-color: rgb(167, 8, 8);
 }
-
-.sublista {
-  text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: rgb(255, 255, 255);
-}
-
-.sublista:visited {
-  text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-left: 10px;
-  margin-right: 50px;
+/* link */
+a {
   color: white;
+  list-style: none;
+  text-decoration: none;
 }
-
-footer {
-  background-image: linear-gradient(to left, crimson, black);
-  width: 100%;
-}
-
+/* párrafo*/
 p {
   height: 30%;
   width: 100%;
@@ -121,95 +85,11 @@ p {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font: size 0.9em;
 }
-
-@mixin atributos($color, $alineacion, $tamano, $tipoLetra) {
-  color: $color;
-  text-align: $alineacion;
-  font-size: $tamano;
-  font-family: $tipoLetra;
+/* selectores */ 
+.seleccion {
+  width: 50%;
 }
-
-h1 {
-  @include atributos(rgb(0, 0, 0),
-    center,
-    xx-large,
-    "Allerta Stencil"
-  );
-}
-
-.h2 {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: xx-large;
-  font-family: 'Lobster', cursive;
-}
-
-.detallesCarosuel {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: medium;
-  font-family: 'Courier New', Courier, monospace;
-  margin-bottom: 0 px;
-  border-radius: 45px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-}
-
-h5 {
-  @include atributos(rgb(0, 0, 0),
-    center,
-    medium,
-    "Allerta Stencil"
-  );
-}
-
-.display-4 {
-  padding-top: 10%;
-}
-
-h4 {
-  @include atributos(rgb(255, 255, 255),
-    center,
-    (xx-large, sans-serif),
-    "Verdana"
-  );
-}
-
-.display-5 {
-  color: white;
-  text-align: center;
-}
-
-
-.d-block {
-  height: 100%;
-  width: 100%;
-}
-
-#label {
-  color: white;
-}
-
-#tituloseccion2 {
-  width: 100%;
-  height: 5%;
-  text-align: left;
-  padding-left: 5%;
-  padding-top: 10%;
-  color: black;
-}
-
-#tituloconsulta {
-  color: white;
-  padding-top: 6%;
-}
-
-#scroll {
-  position: relative;
-  top: 30%;
-}
-
-
+/*atributos botones*/
 @mixin btnAtributos($color, $bgcolor, $brcolor, $width, $heigth,$font) {
   color: $color;
   background-color: $bgcolor;
@@ -223,49 +103,264 @@ h4 {
   -webkit-border-radius: 10px;
 }
 
-.btnFormulario {
-  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 100%,medium);
-}
-
-.btnFormulario:hover {
-  animation: heartBeat;
-  animation-duration: 3s;
-}
-
-.enviar {
-  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 6%, 4,medium);
-}
-
-.hacerPedido {
-  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 5%,medium);
-}
-
-.hacerPedido:hover {
-  animation: heartBeat;
-  animation-duration: 5s;
-}
-.verProductos{
-  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 15%, 5%,medium);  
-}
-.verProductos:hover {
-  animation: heartBeat;
-  animation-duration: 5s;
-}
+/*tamaño de los section*/
 .seccion {
   width: 100%;
   height: 600px;
 }
 
-.misproductos {
-  display: flex;
+/*atributos de títulos*/
+@mixin atributos($color, $alineacion, $tamano, $tipoLetra) {
+  color: $color;
+  text-align: $alineacion;
+  font-size: $tamano;
+  font-family: $tipoLetra;
+}
+h1 {
+  @include atributos(rgb(0, 0, 0),
+    center,
+    xx-large,
+    "Allerta Stencil"
+  );
+}
+.h2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Lobster', cursive;
+}
+h4 {
+  @include atributos(rgb(255, 255, 255),
+    center,
+    (xx-large, sans-serif),
+    "Verdana"
+  );
+}
+h5 {
+  @include atributos(rgb(0, 0, 0),
+    center,
+    medium,
+    "Allerta Stencil"
+  );
+}
+/* pie de página */
+footer {
+  background-image: linear-gradient(to left, crimson, black);
   width: 100%;
+}
+.footer {
+  display: flex;
+  background-image: linear-gradient(to left, crimson, black);
+  height: 15%;
+  width: 100%;
+
+  &__contenedor {
+    display: grid;
+    width: 100%;
+    height: 75%;
+    justify-items: center;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 100%;
+    grid-template-areas: "seguinos pago nav";
+
+    &__seguinos {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+
+      &__p {
+        text-align: left;
+        font-size: 100%;
+        width: 100%;
+        color: white;
+      }
+
+      &__logoinstagram {
+        height: 65%;
+        width: 6%;
+        position: relative;
+        left: 20%;
+        top: 20%;
+      }
+
+      &__logofacebook {
+        height: 65%;
+        width: 6%;
+        left: 20%;
+        position: relative;
+        top: 20%;
+      }
+    }
+
+    &__pago {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+
+      &__mediodepago {
+        color: white;
+        font: 0.2 em;
+        list-style: none;
+        text-decoration: none;
+      }
+    }
+
+    &__nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 30%;
+
+      & nav ul li a {
+        width: 80%;
+        height: 40%;
+        color: white;
+      }
+    }
+  }
+}
+/*index.html*/
+/* section 1: contiene el título de presentación */
+.inicio {
+  @extend .seccion;
+  background-image: url("../../images/fondoPortadaInicio.png");
+  background-size: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* título página remera de presentación "Remeras personalizadas" */
+.titulo1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: "Allerta Stencil", sans-serif;
+  padding-top: 15%;
+}
+/* segundo título de presentación " Estampamos tu imagen" */ 
+.titulo2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: x-large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* link ver productos en el botón ver productos en el section "inicio" */
+.pedido {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+/*botón para ver los productos*/
+.verProductos{
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 15%, 5%,medium);  
+}
+/*animación del otón al posicionar el mouse sobre él*/
+.verProductos:hover {
+  animation: heartBeat;
+  animation-duration: 5s;
+}
+/* section 2:"bienvenida" */
+.bienvenida {
+  background-image: url("../../images/bienvenidosnosotros.png");
+  background-size: 100%;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  border-color: black;
+  border-left: solid 10px;
+}
+/* contenedor que contiene el saludo de bienvenida en el index*/
+.container {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  width: 20%;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+/* columna que contiene el párrafo de bienvenida */
+.col {
+  background-color: rgb(10, 10, 10);
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+/* párrafo de bienvenida */
+.bienvenida_P {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: large;
+}
+/* section 3: contiene el carousel que muestra los tamaños de estampa */
+.estampasRemeras {
+  @extend .seccion;
+  display: flex;
   justify-content: center;
-  background-image: url("../../images/astronautainsiders.png");
-  background-size: cover;
+  align-items: center;
+  background-image: url("../../images/paredinsiders.png");
+  background-size: 100%;
+}
+/* título de cada item en el carousel */
+.letraEstampas {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Lobster', cursive;
+}
+/*parrafo con los detalles del tamaño de las estampas*/
+.detallesCarosuel {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: medium;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+/* tamaño del slide en el carousel*/
+.slide {
+  width: 60%;
 }
 
+/*---------------------------------------------------------------------------------------------------*/
+/* sobre-nosotros */
+/* section 1: contiene el video de demostración*/
+.nosotros {
+  background-image: url("../../images/conocenos.png");
+  background-size: 100%;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+/* título animado conocenos */
+  &__titulo {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: xx-large;
+    font-family: "Allerta Stencil", sans-serif;
+  }
+}
+/* video demostración*/
+.video {
+  width: 70%;
+}
 video {
   width: 90%;
   height: 70%;
@@ -274,7 +369,6 @@ video {
   display: block;
   z-index: -10;
 }
-
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -284,8 +378,221 @@ video {
     opacity: 1;
   }
 }
+/* section 2: contiene el logo de la marca y el párrafo */
+.marca {
+  background-image: url("../../images/conocenosmarca.png");
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding-right: 10%;
+  width: 100%;
+  height: 600px;
+  border-left: solid 10px;
+}
+/* logo del proyecto */
+.logoMarca {
+  height: 20%;
+  width: 20%;
+  margin-right: 0%;
+}
+/* párrafo descripción */
+.p__nosotros {
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 45%;
+  height: 40%;
+  padding-left: 0%;
+  color: rgb(0, 0, 0);
+  font-family: 'Architects Daughter', cursive;
+  font-weight: 200;
+  font-size: large;
+}
 
-#tabla {
+/*---------------------------------------------------------------------------------------------------*/
+/* productos.html */
+/*section 1:se usa en las hojas productos y productos_gorra*/
+.misproductos {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../images/astronautainsiders.png");
+  background-size: cover;
+}
+/* etiquetas de selección de atributos del producto */
+.estampa{
+  width:100%;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+   margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+  }
+  /* contiene las distintas opciones */
+  .contenedor{
+    background-color: rgb(148, 20, 20);
+    display: flex;
+    flex-direction: row; 
+    width: 20%;
+    align-items: center;
+    margin: 5px;
+     margin-bottom: 0 px;
+      border-radius: 45px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;  
+  }
+/* grid que contiene etiquetas para poder elegir distintas caracteristicas de los productos con los precios */
+.productosVenta {
+  display: grid;
+  grid-template-columns: repeat(4,25%);
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1 rem;
+  width:95%;
+  text-align: center;
+  margin: 25PX;
+  /* nombre de los productos que se están mostrando */
+  &__tituloproductos {
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  /* detalles de los productos */
+  &__p {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    width: 40%;
+  }
+  /* precio de los mismos */
+  &__precio {
+    color: rgb(197, 10, 10);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+/* contiene imagen, precio y botón de cada producto */
+.producto {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0.5 em;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+/* imagen del producto */
+.productoMuestra {
+height: 80%;
+border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+/* se agranda la imagen del producto al posicionar el mouse sobre ella*/
+.productoMuestra:hover {
+  transform: scale(1.5, 1.5);
+  z-index: 100;
+}
+/* botón de  pedido del producto */
+.botonProducto {
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 50%, 15%,medium);
+}
+/* efecto al posicionar el botón sobre él */
+.botonProducto:hover {
+  animation: heartBeat;
+  animation-duration: 3s;
+}
+/* contiene las imagenes de los talles */
+.detallesRemera {
+  width: 60%;
+  justify-items: center;
+    margin: 25px;
+}
+/* contiene la imagen*/
+.detalles {
+  display: flex;
+  flex-direction: column;
+  justify-self: stretch;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;  
+}
+/*---------------------------------------------------------------------------------------------------*/
+/* galeria.html */
+/* contiene imagenes de los trabajos realizados */
+.galeria {
+  width: 100%;
+  background-image: url("../../images/galeria.jpg");
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+/* titulo de la galeria */
+.titulo {
+  color: rgb(0, 0, 0);
+}
+/* contenedor con las imagenes de la galería */
+.imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1 rem;
+  width: 80%;
+  height: 80%;
+}
+/* contenedor de la imagen */
+.imagen {
+  width: 20%;
+  margin-bottom: 0.5 em;
+  position:relative;
+  display: block;
+  outline: 2px solid #fff;
+  outline-offset: -10px;
+  padding: 5px;
+}
+/*---------------------------------------------------------------------------------------------------*/
+/* contacto.html */
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background-image: url("../../images/contacto.png");
+  background-size: 100%;
+  height: 600px;
+/* título de la sección */
+  &__titulo {
+    color: white;
+  }
+}
+/* formulario de contacto */
+.form-completar {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+  height: 70%;
+}
+/* etiqueta */
+tabla {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,57 +642,116 @@ video {
   display: inline-flex;
   color: white;
 }
-
-.form-completar {
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  width: 30%;
-  height: 70%;
+/* área de texto para escribir */
+textarea {
+  height: 50%;
+  width: 75%;
 }
-
+/* botones del formulario */
 .botones {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 10%;
-
 }
-
+/*botón para formulario*/
 .btnFormulario {
-  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 70%,medium);
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 100%,medium);
 }
-
-textarea {
-  height: 50%;
-  width: 75%;
+/*efecto al posicionar el mouse sobre los botónes del formulario*/
+.btnFormulario:hover {
+  animation: heartBeat;
+  animation-duration: 3s;
 }
-
-.inicio {
+/* contiene el logo de whatsapp y un número de ejemplo */
+.contactoWhastapp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 10%;
+  height: 8%;
+  position: relative;
+  justify-content: flex-start;
+  /* logo de whatsapp */
+  &__logocontacto {
+    height: 84%;
+    width: 100%;
+  }
+  /* número del contacto de whastapp */
+  &__p {
+    color: white;
+    font-size: medium;
+  }
+}
+/*mediodepago.html */
+/* section 1: contiene info de los medios de pago */
+.infoPago{
   @extend .seccion;
-  background-image: url("../../images/fondoPortadaInicio.png");
+  background-color: #00aff0;
   background-size: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+/* contiene la imagen */
+.infoMercadopago{
+background-color: #fff;
+width:70%;
+height:40%; 
+border-radius: 45px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px; 
+}
+/* imagen */
+.mercadopago{
+  width: 100%;  
+  }
 
+
+#tituloseccion2 {
+  width: 100%;
+  height: 5%;
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 10%;
+  color: black;
+}
+#tituloconsulta {
+  color: white;
+  padding-top: 6%;
+}
+#scroll {
+  position: relative;
+  top: 30%;
+}
+.detallesProductos {
+  @extend .seccion;
+  background-image: url("../../images/detalles.png");
+  background-size: 100%;
+  ;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.display-4 {
+  padding-top: 10%;
+}
+.display-5 {
+  color: white;
+  text-align: center;
+}
+.d-block {
+  height: 100%;
+  width: 100%;
 }
 
-.titulo1 {
-  color: rgb(0, 0, 0);
-  text-align: center;
-  font-family: "Allerta Stencil", sans-serif;
-  padding-top: 15%;
-}
-
-.titulo2 {
-  color: rgb(0, 0, 0);
-  text-align: center;
-  font-size: x-large;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+.btnFormulario {
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 70%,medium);
 }
 
 .btn {
@@ -395,52 +761,10 @@ textarea {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
-
 .btn:hover {
   animation: heartBeat;
   animation-duration: 5s;
 }
-
-.bienvenida {
-  background-image: url("../../images/bienvenidosnosotros.png");
-  background-size: 100%;
-  width: 100%;
-  height: 800px;
-  display: flex;
-  align-items: center;
-  border-color: black;
-  border-left: solid 10px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 20%;
-  margin-bottom: 0 px;
-  border-radius: 45px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-}
-
-.bienvenida_P {
-  background-color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: large;
-}
-
-.col {
-  background-color: rgb(10, 10, 10);
-  margin-bottom: 0 px;
-  border-radius: 45px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-}
-
 .row {
   width: 60%;
   text-align: center;
@@ -461,12 +785,7 @@ p {
   font-size: large;
 }
 
-.letraEstampas {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: xx-large;
-  font-family: 'Lobster', cursive;
-}
+
 
 .muestraRemera {
   width: 60%;
@@ -479,14 +798,6 @@ p {
   height: 50%;
 }
 
-.estampasRemeras {
-  @extend .seccion;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../../images/paredinsiders.png");
-  background-size: 100%;
-}
 
 .estampas {
   display: flex;
@@ -496,195 +807,20 @@ p {
   width: 60%;
 }
 
-.slide {
-  width: 60%;
-}
-.infoPago{
-  @extend .seccion;
-  background-color: #00aff0;
-  background-size: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.infoMercadopago{
-background-color: #fff;
-width:70%;
-height:40%; 
-border-radius: 45px;
--moz-border-radius: 10px;
--webkit-border-radius: 10px; 
-}
-.productosVenta {
-  display: grid;
-  grid-template-columns: repeat(4,25%);
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1 rem;
-  width:95%;
-  text-align: center;
-margin: 25PX;
-  &__p {
-    color: rgb(255, 255, 255);
-    text-align: left;
-    width: 40%;
-  }
 
-  &__tituloproductos {
- 
-    color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
 
-  &__precio {
-    color: rgb(197, 10, 10);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-}
 
-.producto {
-  
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 0.5 em;
-  border-radius: 45px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
 
-}
 
-.productoMuestra {
-height: 80%;
-border-radius: 45px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-}
-.productoMuestra:hover {
-  transform: scale(1.5, 1.5);
-  z-index: 100;
-}
-.botonProducto {
-  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 50%, 15%,medium);
-}
 
-.botonProducto:hover {
-  animation: heartBeat;
-  animation-duration: 3s;
-}
 
-.contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  background-image: url("../../images/contacto.png");
-  background-size: 100%;
-  height: 600px;
 
-  &__titulo {
-    color: white;
-  }
-}
 
-.contactoWhastapp {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 10%;
-  height: 5%;
-  position: relative;
-  justify-content: flex-start;
 
-  &__logocontacto {
-    height: 100%;
-    width: 90%;
-  }
 
-  &__p {
-    color: white;
-    font-size: medium;
-  }
-}
 
-.detallesProductos {
-  @extend .seccion;
-  background-image: url("../../images/detalles.png");
-  background-size: 100%;
-  ;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
 
-.galeria {
-  width: 100%;
-  background-image: url("../../images/galeria.jpg");
-  background-size:cover;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 
-}
-
-.titulo {
-  color: rgb(0, 0, 0);
-}
-
-.imagenes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1 rem;
-  width: 80%;
-  height: 80%;
-}
-
-.imagen {
-  width: 20%;
-  margin-bottom: 0.5 em;
-  position:relative;
-  display: block;
-  outline: 2px solid #fff;
-  outline-offset: -10px;
-  padding: 5px;
-}
-
-.estampa{
-width:100%;
-display: flex;
-flex-direction: row; 
-align-items: center;
-justify-content: center;
-padding: 20px;
- margin-bottom: 0 px;
-  border-radius: 45px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-}
-.contenedor{
-  background-color: rgb(148, 20, 20);
-  display: flex;
-  flex-direction: row; 
-  width: 20%;
-  align-items: center;
-  margin: 5px;
-   margin-bottom: 0 px;
-    border-radius: 45px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;  
-}
-.seleccion {
-  width: 50%;
-}
 
 .column {
   flex: 20%;
@@ -727,11 +863,7 @@ img {
   z-index: 100;
 }
 
-.detallesRemera {
-  width: 60%;
-  justify-items: center;
-    margin: 25px;
-}
+
 
 .titulos {
   display: flex;
@@ -742,159 +874,17 @@ img {
   background-color: rgb(196, 41, 41);
 }
 
-.detalles {
-  display: flex;
-  flex-direction: column;
-  justify-self: stretch;
-  justify-content: center;
-  text-align: center;
-  background-color: rgb(255, 255, 255);
-  margin: 5px;
-  margin-bottom: 0 px;
-  border-radius: 45px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;  
-}
+
 
 .titulo_item {
   text-align: center;
   font-size: medium;
 }
 
-.nosotros {
-  background-image: url("../../images/conocenos.png");
-  background-size: 100%;
-  height: 600px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 
-  &__titulo {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: xx-large;
-    font-family: "Allerta Stencil", sans-serif;
-  }
-}
 
-.video {
-  width: 70%;
-}
 
-.marca {
-  background-image: url("../../images/conocenosmarca.png");
-  background-size: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  padding-right: 10%;
-  width: 100%;
-  height: 600px;
-  border-left: solid 10px;
 
-}
-
-.logoMarca {
-  height: 20%;
-  width: 20%;
-  margin-right: 0%;
-}
-
-.p__nosotros {
-  margin-bottom: 0 px;
-  border-radius: 45px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  width: 45%;
-  height: 40%;
-  padding-left: 0%;
-  color: rgb(0, 0, 0);
-  font-family: 'Architects Daughter', cursive;
-  font-weight: 200;
-  font-size: large;
-}
-
-.footer {
-  display: flex;
-  background-image: linear-gradient(to left, crimson, black);
-  height: 15%;
-  width: 100%;
-
-  &__contenedor {
-    display: grid;
-    width: 100%;
-    height: 75%;
-    justify-items: center;
-    grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 100%;
-    grid-template-areas: "seguinos pago nav";
-
-    &__seguinos {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      height: 100%;
-
-      &__p {
-        text-align: left;
-        font-size: 100%;
-        width: 100%;
-        color: white;
-      }
-
-      &__logoinstagram {
-        height: 60%;
-        width: 6%;
-        position: relative;
-        left: 15%;
-        top: 15%;
-      }
-
-      &__logofacebook {
-        height: 60%;
-        width: 6%;
-        left: 15%;
-        position: relative;
-        top: 15%;
-      }
-    }
-
-    &__pago {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-
-      &__mediodepago {
-        color: white;
-        font: 0.2 em;
-        list-style: none;
-        text-decoration: none;
-      }
-    }
-
-    &__nav {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      width: 100%;
-      height: 30%;
-
-      & nav ul li a {
-        width: 80%;
-        height: 40%;
-        color: white;
-      }
-    }
-  }
-}
 
 
 
@@ -919,7 +909,6 @@ img {
     width: 30%;
     height: 30%;
   }
-  
   .itemMuestra {
     height: 60%;
     width: 60%;
@@ -1181,7 +1170,29 @@ img {
       opacity: 1;
     }
   }
-  
+  .infoPago{
+    width: 100%;
+    height: 600px;
+    background-color: #00aff0;
+    background-size: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .infoMercadopago{
+  background-color: #fff;
+  width:100%;
+  height:40%; 
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; 
+  }
+  .mercadopago{
+    width: 100%; 
+    height: 40%; 
+    }
   #tabla {
     display: flex;
     justify-content: center;
@@ -1397,6 +1408,7 @@ img {
   
   .slide {
     width: 100%;
+    height: 37%;
   }
 
   .productosVenta {
@@ -1697,7 +1709,6 @@ img {
         flex-wrap: wrap;
         width: 100%;
         height: 100%;
-  
         &__p {
           text-align: left;
           font-size: 100%;
@@ -1727,10 +1738,10 @@ img {
         justify-content: center;
         width: 100%;
         height: 100%;
-  
+        margin-top: 15%;
         &__mediodepago {
           color: white;
-          font: 0.2 em;
+          font-size: 75%;
           list-style: none;
           text-decoration: none;
         }
