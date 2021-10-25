@@ -177,31 +177,29 @@ footer {
       }
 
       &__logoinstagram {
-        height: 65%;
-        width: 6%;
+        width: 35px;
+        height: 35px;
         position: relative;
         left: 20%;
-        top: 20%;
       }
-
       &__logofacebook {
-        height: 65%;
-        width: 6%;
+        width: 35px;
+        height: 35px;
         left: 20%;
         position: relative;
-        top: 20%;
       }
     }
 
     &__pago {
       display: flex;
       justify-content: center;
+      margin:auto;
       width: 100%;
       height: 100%;
 
       &__mediodepago {
         color: white;
-        font: 0.2 em;
+        font-size:80%;
         list-style: none;
         text-decoration: none;
       }
@@ -234,36 +232,46 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+  &__titulos{
+    width:40%;
 /* título página remera de presentación "Remeras personalizadas" */
-.titulo1 {
-  color: rgb(0, 0, 0);
+&__titulo1 {
+  color: rgb(255, 255, 255);
+  text-shadow: -2px -2px  #000000;
+  font-size: x-large;
+  font-weight: bolder;
   text-align: center;
   font-family: 'Comfortaa', cursive;
   padding-top: 15%;
 }
 /* segundo título de presentación " Estampamos tu imagen" */ 
-.titulo2 {
-  color: rgb(0, 0, 0);
+&__titulo2 {
+  color: rgb(255, 255, 255);
+  text-shadow: -2px -2px  #000000;
+  font-size: medium;
+  font-weight: bolder;
   text-align: center;
-  font-size: x-large;
   font-family: 'Comfortaa', cursive;
 }
+&__verProductos{
+/*botón para ver los productos*/
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 40%, 20%,medium);  
+}
+/*animación del otón al posicionar el mouse sobre él*/
+&__verProductos:hover {
+  animation: heartBeat;
+  animation-duration: 5s;
+}
+  }
+}
+
 /* link ver productos en el botón ver productos en el section "inicio" */
 .pedido {
   color: white;
   list-style: none;
   text-decoration: none;
 }
-/*botón para ver los productos*/
-.verProductos{
-  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 15%, 5%,medium);  
-}
-/*animación del otón al posicionar el mouse sobre él*/
-.verProductos:hover {
-  animation: heartBeat;
-  animation-duration: 5s;
-}
+
 /* section 2:"bienvenida" */
 .bienvenida {
   background-image: url("../../images/bienvenidosnosotros.png");
@@ -428,7 +436,7 @@ video {
   background-size: cover;
 }
 /* etiquetas de selección de atributos del producto */
-.estampa{
+.opciones{
   width:100%;
   display: flex;
   flex-direction: row; 
@@ -570,6 +578,10 @@ border-radius: 45px;
   outline-offset: -10px;
   padding: 5px;
 }
+.imagen:hover {
+  transform: scale(1.5, 1.5);
+  z-index: 100;
+}
 /*---------------------------------------------------------------------------------------------------*/
 /* contacto.html */
 .contacto {
@@ -578,7 +590,7 @@ border-radius: 45px;
   align-items: center;
   align-content: center;
   background-image: url("../../images/contacto.png");
-  background-size: 100%;
+  background-size: cover;
   height: 600px;
 /* título de la sección */
   &__titulo {
@@ -591,8 +603,8 @@ border-radius: 45px;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 30%;
-  height: 70%;
+  width: 400px;
+  height: 700px;
 }
 /* etiqueta */
 tabla {
@@ -607,23 +619,20 @@ tabla {
 
 #datos-nombre {
   text-align: center;
-  width: 74%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  padding:7px;
 }
 
 #datos-localidad {
   text-align: center;
-  width: 76%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  padding:7px;
 }
 
 #datos-numero {
-  width: 74%;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  padding:7px;
 }
 
 #label {
@@ -648,15 +657,16 @@ tabla {
 /* área de texto para escribir */
 textarea {
   height: 50%;
-  width: 75%;
+  width: 100%;
 }
 /* botones del formulario */
 .botones {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 10%;
+  width: 750px;
+  height: 80px;
+  margin:2px;
 }
 /*botón para formulario*/
 .btnFormulario {
@@ -678,8 +688,8 @@ textarea {
   justify-content: flex-start;
   /* logo de whatsapp */
   &__logocontacto {
-    height: 84%;
-    width: 100%;
+    height: 30px;
+    width: 30px;
   }
   /* número del contacto de whastapp */
   &__p {
@@ -711,104 +721,30 @@ border-radius: 45px;
 /* imagen */
 .mercadopago{
   width: 100%;  
-  }
-
-
-#tituloseccion2 {
-  width: 100%;
-  height: 5%;
-  text-align: left;
-  padding-left: 5%;
-  padding-top: 10%;
-  color: black;
+  } 
+/*descripción de los medios de pago*/
+  p {
+display: flex;
+flex-direction: column;
+text-align: center;
+width: 100%;
+font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+font-size: large;
 }
-#tituloconsulta {
-  color: white;
-  padding-top: 6%;
-}
-#scroll {
-  position: relative;
-  top: 30%;
-}
-.detallesProductos {
-  @extend .seccion;
-  background-image: url("../../images/detalles.png");
-  background-size: 100%;
-  ;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-.display-4 {
-  padding-top: 10%;
-}
-.display-5 {
-  color: white;
-  text-align: center;
-}
-.d-block {
-  height: 100%;
-  width: 100%;
-}
-
-.btnFormulario {
-  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 70%,medium);
-}
-
-.btn {
-  width: 20%;
-  margin-bottom: 0 px;
-  border-radius: 45px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-}
-.btn:hover {
-  animation: heartBeat;
-  animation-duration: 5s;
-}
-.row {
-  width: 60%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0 px;
-  border-radius: 45px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-}
-
-p {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: large;
-}
+/*---------------------------------------------------------------------------------------------------*/
 
 
 
-.muestraRemera {
-  width: 60%;
-  height: 40%;
-
-}
-
-.img-fluid {
-  width: 50%;
-  height: 50%;
-}
 
 
-.estampas {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-}
+
+
+
+
+
+
+
+
 
 
 
@@ -866,28 +802,213 @@ img {
   z-index: 100;
 }
 
+@media only screen and (min-width:320px) {
 
+/*index.html*/
+/* section 1: contiene el título de presentación */ 
+.inicio{
+  background-size: cover;
+}
+/* contenedor que contiene el saludo de bienvenida en el index*/
+.container {
+  width: 100%;
+}
+/*
+.verProductos{
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 50%, 5%,small);  
+}
+.verProductos:hover {
+  animation: heartBeat;
+  animation-duration: 5s;
+}*/
+/* section 2:"bienvenida" */
+.bienvenida {
+  background-size: cover;
+}
+/* section 3: contiene el carousel que muestra los tamaños de estampa */
+.estampasRemeras {
+  background-size: cover;
+}
+/*---------------------------------------------------------------------------------------------------*/
+/* sobre-nosotros */
+/* section 1: contiene el video de demostración*/
+.nosotros {
+  background-size: cover;
+}
+/* video demostración*/
+.video {
+  width: 100%;
+}
+/* section 2: contiene el logo de la marca y el párrafo */
+.marca {
+  background-size: cover;
+}
+/* párrafo descripción */
+.p__nosotros {
+  width: 100%;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 200;
+  font-size: medium;
+}
+}
+@media only screen and (min-width:310px) and (max-width:331px){
+  .footer{
+  &__contenedor{
+    &__pago {
+      display: flex;
+      justify-content: center;
+      margin:auto;
+      width: 100%;
+      height: 100%;
+  
+      &__mediodepago {
+        color: white;
+        font-size:70%;
+        list-style: none;
+        text-decoration: none;
+      }
+    }  
+  }  
+  }
+ 
+}
+@media only screen and (max-width:600px){
+/*---------------------------------------------------------------------------------------------------*/
+/* contacto.html */
+.contacto {
+background-image: url("../../images/contacto.png");
+background-size: cover;
+}
+/* formulario de contacto */
+.form-completar {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+/* etiqueta */
+#datos-nombre {
+width: 75%;
+}
+#datos-localidad {
+  width: 75%;
+}
+#datos-numero {
+  width: 75%;
+}
+/* área de texto para escribir */
+textarea {
+  height: 50%;
+  width: 75%;
+}
+}
+@media only screen and (min-width:600px)and(max-width:1000px){
+  /*---------------------------------------------------------------------------------------------------*/
+  /* productos.html */
+  /* grid que contiene etiquetas para poder elegir distintas caracteristicas de los productos con los precios */
+  .productosVenta {
+    grid-template-columns: repeat(3,33.33%);
+    width:100%;
+    &__p {
+      font-size: small;
+    }
+  }
+  .opciones{
+    height: 40%;
+    justify-self: stretch;
+    }
+    /* contiene las distintas opciones */
+    .contenedor{
+    display: block;
+    align-content: center;
+    width: 100%;
+    }
+    .seleccion {
+      width: 100%;
+    }
+}
+  @media only screen and (max-width:600px){
+    /*---------------------------------------------------------------------------------------------------*/
+    /* productos.html */
+    /* grid que contiene etiquetas para poder elegir distintas caracteristicas de los productos con los precios */
+    .productosVenta {
+      grid-template-columns: repeat(2,50%);
+      width:100%;
+      &__p {
+        font-size: small;
+      }
+    }
+    .opciones{
+      height: 40%;
+      justify-self: stretch;
+      }
+      /* contiene las distintas opciones */
+      .contenedor{
+      display: block;
+      align-content: center;
+      width: 100%;
+      }
+      .seleccion {
+        width: 100%;
+      }
+  }
+@media only screen and (max-width:600px){
+/*---------------------------------------------------------------------------------------------------*/
+/* productos.html */
 
-.titulos {
+/* etiquetas de selección de atributos del producto */
+.opciones{
+height: 40%;
+justify-self: stretch;
+}
+/* contiene las distintas opciones */
+.contenedor{
+display: block;
+align-content: center;
+width: 100%;
+}
+.seleccion {
+  width: 100%;
+}
+/* botón de  pedido del producto */
+.botonProducto {
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 50%, 15%,x-small);
+}
+/* efecto al posicionar el botón sobre él */
+.botonProducto:hover {
+  animation: heartBeat;
+  animation-duration: 3s;
+}
+/* contiene las imagenes de los talles */
+.detallesRemera {
+  width: 60%;
+  justify-items: center;
+    margin: 25px;
+}
+/* contiene la imagen*/
+.detalles {
   display: flex;
   flex-direction: column;
   justify-self: stretch;
   justify-content: center;
   text-align: center;
-  background-color: rgb(196, 41, 41);
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;  
 }
-
-
-
-.titulo_item {
-  text-align: center;
-  font-size: medium;
+/* contenedor con las imagenes de la galería */
+.imagenes {
+  width: 100%;
+  height: 100%;
 }
-
-
-
-
-
+/* contenedor de la imagen */
+.imagen {
+  width: 33%;
+}
+}
 
 
 

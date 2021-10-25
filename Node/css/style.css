@@ -88,7 +88,7 @@ p {
 
 /*atributos botones*/
 /*tamaño de los section*/
-.seccion, .inicio, .estampasRemeras, .infoPago, .detallesProductos {
+.seccion, .inicio, .estampasRemeras, .infoPago {
   width: 100%;
   height: 600px; }
 
@@ -146,25 +146,24 @@ footer {
         width: 100%;
         color: white; }
       .footer__contenedor__seguinos__logoinstagram {
-        height: 65%;
-        width: 6%;
+        width: 35px;
+        height: 35px;
         position: relative;
-        left: 20%;
-        top: 20%; }
+        left: 20%; }
       .footer__contenedor__seguinos__logofacebook {
-        height: 65%;
-        width: 6%;
+        width: 35px;
+        height: 35px;
         left: 20%;
-        position: relative;
-        top: 20%; }
+        position: relative; }
     .footer__contenedor__pago {
       display: flex;
       justify-content: center;
+      margin: auto;
       width: 100%;
       height: 100%; }
       .footer__contenedor__pago__mediodepago {
         color: white;
-        font: 0.2 em;
+        font-size: 80%;
         list-style: none;
         text-decoration: none; }
     .footer__contenedor__nav {
@@ -189,44 +188,47 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-
-/* título página remera de presentación "Remeras personalizadas" */
-.titulo1 {
-  color: black;
-  text-align: center;
-  font-family: 'Comfortaa', cursive;
-  padding-top: 15%; }
-
-/* segundo título de presentación " Estampamos tu imagen" */
-.titulo2 {
-  color: black;
-  text-align: center;
-  font-size: x-large;
-  font-family: 'Comfortaa', cursive; }
+  .inicio__titulos {
+    width: 40%;
+    /* título página remera de presentación "Remeras personalizadas" */
+    /* segundo título de presentación " Estampamos tu imagen" */
+    /*animación del otón al posicionar el mouse sobre él*/ }
+    .inicio__titulos__titulo1 {
+      color: white;
+      text-shadow: -2px -2px  #000000;
+      font-size: x-large;
+      font-weight: bolder;
+      text-align: center;
+      font-family: 'Comfortaa', cursive;
+      padding-top: 15%; }
+    .inicio__titulos__titulo2 {
+      color: white;
+      text-shadow: -2px -2px  #000000;
+      font-size: medium;
+      font-weight: bolder;
+      text-align: center;
+      font-family: 'Comfortaa', cursive; }
+    .inicio__titulos__verProductos {
+      /*botón para ver los productos*/
+      color: white;
+      background-color: crimson;
+      border-color: crimson;
+      width: 40%;
+      height: 20%;
+      font-size: medium;
+      margin-bottom: 0 px;
+      border-radius: 45px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px; }
+    .inicio__titulos__verProductos:hover {
+      animation: heartBeat;
+      animation-duration: 5s; }
 
 /* link ver productos en el botón ver productos en el section "inicio" */
 .pedido {
   color: white;
   list-style: none;
   text-decoration: none; }
-
-/*botón para ver los productos*/
-.verProductos {
-  color: white;
-  background-color: crimson;
-  border-color: crimson;
-  width: 15%;
-  height: 5%;
-  font-size: medium;
-  margin-bottom: 0 px;
-  border-radius: 45px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px; }
-
-/*animación del otón al posicionar el mouse sobre él*/
-.verProductos:hover {
-  animation: heartBeat;
-  animation-duration: 5s; }
 
 /* section 2:"bienvenida" */
 .bienvenida {
@@ -384,7 +386,7 @@ video {
   background-size: cover; }
 
 /* etiquetas de selección de atributos del producto */
-.estampa {
+.opciones {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -532,6 +534,10 @@ video {
   outline-offset: -10px;
   padding: 5px; }
 
+.imagen:hover {
+  transform: scale(1.5, 1.5);
+  z-index: 100; }
+
 /*---------------------------------------------------------------------------------------------------*/
 /* contacto.html */
 .contacto {
@@ -540,7 +546,7 @@ video {
   align-items: center;
   align-content: center;
   background-image: url("../../images/contacto.png");
-  background-size: 100%;
+  background-size: cover;
   height: 600px;
   /* título de la sección */ }
   .contacto__titulo {
@@ -552,8 +558,8 @@ video {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 30%;
-  height: 70%; }
+  width: 400px;
+  height: 700px; }
 
 /* etiqueta */
 tabla {
@@ -567,21 +573,18 @@ tabla {
 
 #datos-nombre {
   text-align: center;
-  width: 74%;
-  margin-left: auto;
-  margin-right: auto; }
+  width: 100%;
+  padding: 7px; }
 
 #datos-localidad {
   text-align: center;
-  width: 76%;
-  margin-left: auto;
-  margin-right: auto; }
+  width: 100%;
+  padding: 7px; }
 
 #datos-numero {
-  width: 74%;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto; }
+  width: 100%;
+  padding: 7px; }
 
 #label {
   display: inline-flex;
@@ -602,15 +605,16 @@ tabla {
 /* área de texto para escribir */
 textarea {
   height: 50%;
-  width: 75%; }
+  width: 100%; }
 
 /* botones del formulario */
 .botones {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 10%; }
+  width: 750px;
+  height: 80px;
+  margin: 2px; }
 
 /*botón para formulario*/
 .btnFormulario {
@@ -642,8 +646,8 @@ textarea {
   /* logo de whatsapp */
   /* número del contacto de whastapp */ }
   .contactoWhastapp__logocontacto {
-    height: 84%;
-    width: 100%; }
+    height: 30px;
+    width: 30px; }
   .contactoWhastapp__p {
     color: white;
     font-size: medium; }
@@ -672,75 +676,7 @@ textarea {
 .mercadopago {
   width: 100%; }
 
-#tituloseccion2 {
-  width: 100%;
-  height: 5%;
-  text-align: left;
-  padding-left: 5%;
-  padding-top: 10%;
-  color: black; }
-
-#tituloconsulta {
-  color: white;
-  padding-top: 6%; }
-
-#scroll {
-  position: relative;
-  top: 30%; }
-
-.detallesProductos {
-  background-image: url("../../images/detalles.png");
-  background-size: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center; }
-
-.display-4 {
-  padding-top: 10%; }
-
-.display-5 {
-  color: white;
-  text-align: center; }
-
-.d-block {
-  height: 100%;
-  width: 100%; }
-
-.btnFormulario {
-  color: white;
-  background-color: crimson;
-  border-color: crimson;
-  width: 10%;
-  height: 70%;
-  font-size: medium;
-  margin-bottom: 0 px;
-  border-radius: 45px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px; }
-
-.btn {
-  width: 20%;
-  margin-bottom: 0 px;
-  border-radius: 45px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px; }
-
-.btn:hover {
-  animation: heartBeat;
-  animation-duration: 5s; }
-
-.row {
-  width: 60%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0 px;
-  border-radius: 45px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px; }
-
+/*descripción de los medios de pago*/
 p {
   display: flex;
   flex-direction: column;
@@ -749,21 +685,7 @@ p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: large; }
 
-.muestraRemera {
-  width: 60%;
-  height: 40%; }
-
-.img-fluid {
-  width: 50%;
-  height: 50%; }
-
-.estampas {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 60%; }
-
+/*---------------------------------------------------------------------------------------------------*/
 .column {
   flex: 20%;
   padding: 5px; }
@@ -795,14 +717,175 @@ img {
   transform: scale(1.5, 1.5);
   z-index: 100; }
 
-.titulos {
-  display: flex;
-  flex-direction: column;
-  justify-self: stretch;
-  justify-content: center;
-  text-align: center;
-  background-color: #c42929; }
+@media only screen and (min-width: 320px) {
+  /*index.html*/
+  /* section 1: contiene el título de presentación */
+  .inicio {
+    background-size: cover; }
+  /* contenedor que contiene el saludo de bienvenida en el index*/
+  .container {
+    width: 100%; }
+  /*
+.verProductos{
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 50%, 5%,small);  
+}
+.verProductos:hover {
+  animation: heartBeat;
+  animation-duration: 5s;
+}*/
+  /* section 2:"bienvenida" */
+  .bienvenida {
+    background-size: cover; }
+  /* section 3: contiene el carousel que muestra los tamaños de estampa */
+  .estampasRemeras {
+    background-size: cover; }
+  /*---------------------------------------------------------------------------------------------------*/
+  /* sobre-nosotros */
+  /* section 1: contiene el video de demostración*/
+  .nosotros {
+    background-size: cover; }
+  /* video demostración*/
+  .video {
+    width: 100%; }
+  /* section 2: contiene el logo de la marca y el párrafo */
+  .marca {
+    background-size: cover; }
+  /* párrafo descripción */
+  .p__nosotros {
+    width: 100%;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 200;
+    font-size: medium; } }
 
-.titulo_item {
-  text-align: center;
-  font-size: medium; }
+@media only screen and (min-width: 310px) and (max-width: 331px) {
+  .footer__contenedor__pago {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 100%; }
+    .footer__contenedor__pago__mediodepago {
+      color: white;
+      font-size: 70%;
+      list-style: none;
+      text-decoration: none; } }
+
+@media only screen and (max-width: 600px) {
+  /*---------------------------------------------------------------------------------------------------*/
+  /* contacto.html */
+  .contacto {
+    background-image: url("../../images/contacto.png");
+    background-size: cover; }
+  /* formulario de contacto */
+  .form-completar {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%; }
+  /* etiqueta */
+  #datos-nombre {
+    width: 75%; }
+  #datos-localidad {
+    width: 75%; }
+  #datos-numero {
+    width: 75%; }
+  /* área de texto para escribir */
+  textarea {
+    height: 50%;
+    width: 75%; } }
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  /*---------------------------------------------------------------------------------------------------*/
+  /* productos.html */
+  /* grid que contiene etiquetas para poder elegir distintas caracteristicas de los productos con los precios */
+  .productosVenta {
+    grid-template-columns: repeat(3, 33.33%);
+    width: 100%; }
+    .productosVenta__p {
+      font-size: small; }
+  .opciones {
+    height: 40%;
+    justify-self: stretch; }
+  /* contiene las distintas opciones */
+  .contenedor {
+    display: block;
+    align-content: center;
+    width: 100%; }
+  .seleccion {
+    width: 100%; } }
+
+@media only screen and (max-width: 600px) {
+  /*---------------------------------------------------------------------------------------------------*/
+  /* productos.html */
+  /* grid que contiene etiquetas para poder elegir distintas caracteristicas de los productos con los precios */
+  .productosVenta {
+    grid-template-columns: repeat(2, 50%);
+    width: 100%; }
+    .productosVenta__p {
+      font-size: small; }
+  .opciones {
+    height: 40%;
+    justify-self: stretch; }
+  /* contiene las distintas opciones */
+  .contenedor {
+    display: block;
+    align-content: center;
+    width: 100%; }
+  .seleccion {
+    width: 100%; } }
+
+@media only screen and (max-width: 600px) {
+  /*---------------------------------------------------------------------------------------------------*/
+  /* productos.html */
+  /* etiquetas de selección de atributos del producto */
+  .opciones {
+    height: 40%;
+    justify-self: stretch; }
+  /* contiene las distintas opciones */
+  .contenedor {
+    display: block;
+    align-content: center;
+    width: 100%; }
+  .seleccion {
+    width: 100%; }
+  /* botón de  pedido del producto */
+  .botonProducto {
+    color: white;
+    background-color: crimson;
+    border-color: crimson;
+    width: 50%;
+    height: 15%;
+    font-size: x-small;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  /* efecto al posicionar el botón sobre él */
+  .botonProducto:hover {
+    animation: heartBeat;
+    animation-duration: 3s; }
+  /* contiene las imagenes de los talles */
+  .detallesRemera {
+    width: 60%;
+    justify-items: center;
+    margin: 25px; }
+  /* contiene la imagen*/
+  .detalles {
+    display: flex;
+    flex-direction: column;
+    justify-self: stretch;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    margin: 5px;
+    margin-bottom: 0 px;
+    border-radius: 45px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; }
+  /* contenedor con las imagenes de la galería */
+  .imagenes {
+    width: 100%;
+    height: 100%; }
+  /* contenedor de la imagen */
+  .imagen {
+    width: 33%; } }
