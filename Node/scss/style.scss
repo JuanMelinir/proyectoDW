@@ -264,14 +264,12 @@ footer {
 }
   }
 }
-
 /* link ver productos en el botón ver productos en el section "inicio" */
 .pedido {
   color: white;
   list-style: none;
   text-decoration: none;
 }
-
 /* section 2:"bienvenida" */
 .bienvenida {
   background-image: url("../../images/bienvenidosnosotros.png");
@@ -343,13 +341,12 @@ footer {
 .slide {
   width: 60%;
 }
-
 /*---------------------------------------------------------------------------------------------------*/
 /* sobre-nosotros */
 /* section 1: contiene el video de demostración*/
 .nosotros {
   background-image: url("../../images/conocenos.png");
-  background-size: 100%;
+  background-size: cover;
   height: 600px;
   width: 100%;
   display: flex;
@@ -365,7 +362,6 @@ footer {
     font-family: 'Comfortaa', cursive;
   }
 }
-
 /* video demostración*/
 .video {
   width: 70%;
@@ -393,36 +389,22 @@ video {
   background-size: 100%;
   display: flex;
   align-items: center;
+  justify-content: right;
   flex-direction: row-reverse;
   padding-right: 10%;
   width: 100%;
   height: 600px;
   border-left: solid 10px;
 }
-/* logo del proyecto */
-.logoMarca {
-  height: 20%;
-  width: 20%;
-  margin-right: 0%;
-}
-/* párrafo descripción */
-.p__nosotros {
-  margin-bottom: 0 px;
-  border-radius: 45px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  width: 45%;
-  height: 40%;
-  padding-left: 0%;
-  color: rgb(0, 0, 0);
+/*parrafo descripción*/
+.p_nosotros{
   font-family: 'Comfortaa', cursive;
-  font-weight: 200;
-  font-size: large;
 }
-
+/*contenedor del párrafo*/
+.presentacion{
+width:45%;
+float:right;
+}
 /*---------------------------------------------------------------------------------------------------*/
 /* productos.html */
 /*section 1:se usa en las hojas productos y productos_gorra*/
@@ -526,7 +508,7 @@ border-radius: 45px;
 .detallesRemera {
   width: 60%;
   justify-items: center;
-    margin: 25px;
+  margin: 25px;
 }
 /* contiene la imagen*/
 .detalles {
@@ -542,12 +524,21 @@ border-radius: 45px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;  
 }
+.detalles:hover {
+transform: scale(1.5, 1.5);
+  z-index: 100;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /*---------------------------------------------------------------------------------------------------*/
 /* galeria.html */
 /* contiene imagenes de los trabajos realizados */
 .galeria {
   width: 100%;
-  background-image: url("../../images/galeria.jpg");
+  background-image: url("../../images/fondogaleria.png");
   background-size:cover;
   display: flex;
   flex-direction: column;
@@ -591,7 +582,6 @@ border-radius: 45px;
   align-content: center;
   background-image: url("../../images/contacto.png");
   background-size: cover;
-  height: 600px;
 /* título de la sección */
   &__titulo {
     color: white;
@@ -604,7 +594,8 @@ border-radius: 45px;
   justify-content: center;
   text-align: center;
   width: 400px;
-  height: 700px;
+  height: 680px;
+  margin-bottom: 20px;
 }
 /* etiqueta */
 tabla {
@@ -616,61 +607,74 @@ tabla {
   border-left: solid 10px;
   border-right: solid 10px;
 }
-
 #datos-nombre {
   text-align: center;
   width: 100%;
   padding:7px;
+  margin: 5px;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;  
 }
-
 #datos-localidad {
   text-align: center;
   width: 100%;
   padding:7px;
+  margin: 5px;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;  
 }
-
 #datos-numero {
   text-align: center;
   width: 100%;
   padding:7px;
+  margin: 5px;
+  margin-bottom: 0 px;
+  border-radius: 45px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;  
 }
-
 #label {
   display: inline-flex;
   color: white;
 }
-
 #label-numero {
   color: white;
   display: inline-flex;
 }
-
 #label-localidad {
   display: inline-flex;
   color: white;
 }
-
 #label-nombre {
   display: inline-flex;
   color: white;
 }
 /* área de texto para escribir */
 textarea {
-  height: 50%;
+  height: 40%;
+  max-height: 60%;
   width: 100%;
+  margin: 5px;
+  border-radius: 25px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;  
 }
 /* botones del formulario */
 .botones {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 750px;
-  height: 80px;
+  width: 400px;
   margin:2px;
+  margin-top: 5px;
 }
 /*botón para formulario*/
 .btnFormulario {
-  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 10%, 100%,medium);
+  @include btnAtributos(rgb(255, 255, 255), crimson, crimson, 20%, 100%,small);
 }
 /*efecto al posicionar el mouse sobre los botónes del formulario*/
 .btnFormulario:hover {
@@ -682,10 +686,9 @@ textarea {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 10%;
-  height: 8%;
-  position: relative;
-  justify-content: flex-start;
+  align-content: center;
+  width: 400px;
+  justify-content: center;
   /* logo de whatsapp */
   &__logocontacto {
     height: 30px;
@@ -693,8 +696,10 @@ textarea {
   }
   /* número del contacto de whastapp */
   &__p {
+    width:110px;
     color: white;
     font-size: medium;
+    margin-top: 15px;
   }
 }
 /*mediodepago.html */
@@ -713,15 +718,15 @@ textarea {
 .infoMercadopago{
 background-color: #fff;
 width:70%;
-height:40%; 
 border-radius: 45px;
 -moz-border-radius: 10px;
 -webkit-border-radius: 10px; 
 }
-/* imagen */
-.mercadopago{
-  width: 100%;  
-  } 
+/* contiene la imagen */
+.infoMercadopago:hover{
+  transform: scale(1.5, 1.5);
+  z-index: 100;
+  }
 /*descripción de los medios de pago*/
   p {
 display: flex;
@@ -730,80 +735,11 @@ text-align: center;
 width: 100%;
 font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 font-size: large;
-}
+  }
+
 /*---------------------------------------------------------------------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.column {
-  flex: 20%;
-  padding: 5px;
-}
-
-.column img {
-  margin-top: 5px;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-.grilla {
-  display: grid;
-  width: 80%;
-  height: 75%;
-  justify-items: center;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 50% 50%;
-  grid-template-areas:
-    "item item item item item"
-    "item item item item item";
-}
-
-.caja {
-  justify-self: stretch;
-}
-
-.item {
-  width: 95%;
-}
-
-.caja:hover {
-  transform: scale(1.5, 1.5);
-  z-index: 100;
-}
-
 @media only screen and (min-width:320px) {
-
 /*index.html*/
 /* section 1: contiene el título de presentación */ 
 .inicio{
@@ -829,6 +765,7 @@ img {
 .estampasRemeras {
   background-size: cover;
 }
+
 /*---------------------------------------------------------------------------------------------------*/
 /* sobre-nosotros */
 /* section 1: contiene el video de demostración*/
@@ -843,14 +780,8 @@ img {
 .marca {
   background-size: cover;
 }
-/* párrafo descripción */
-.p__nosotros {
-  width: 100%;
-  font-family: 'Comfortaa', cursive;
-  font-weight: 200;
-  font-size: medium;
 }
-}
+
 @media only screen and (min-width:310px) and (max-width:331px){
   .footer{
   &__contenedor{
@@ -870,10 +801,21 @@ img {
     }  
   }  
   }
- 
 }
 @media only screen and (max-width:600px){
 /*---------------------------------------------------------------------------------------------------*/
+/*sobrenosotros.html*/
+/*contenedor del párrafo*/
+.presentacion{
+  width:100%;
+  }
+/* párrafo descripción */
+.p__nosotros {
+  width: 100%;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 200;
+  font-size: small;
+}
 /* contacto.html */
 .contacto {
 background-image: url("../../images/contacto.png");
@@ -885,6 +827,7 @@ background-size: cover;
   justify-content: center;
   text-align: center;
   width: 100%;
+  box-sizing: border-box;
 }
 /* etiqueta */
 #datos-nombre {
@@ -898,8 +841,14 @@ width: 75%;
 }
 /* área de texto para escribir */
 textarea {
-  height: 50%;
+  
   width: 75%;
+}
+.botones {
+  width: 100%;
+}
+.contactoWhastapp {
+  width: 100%;
 }
 }
 @media only screen and (min-width:600px)and(max-width:1000px){
